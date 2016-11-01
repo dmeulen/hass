@@ -1,0 +1,7 @@
+huiskamer:
+  name: Huiskamer
+  entities:
+    - light.hoek_lamp
+    - light.keuken_tafel
+    - light.lamp_bank
+

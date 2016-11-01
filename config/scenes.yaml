@@ -1,0 +1,59 @@
+- name: huiskamer normaal
+  entities:
+    light.hoek_lamp:
+      state: on
+      transition: 10
+      brightness: 255
+      rgb_color: [ 255, 214, 0  ]
+    light.keuken_tafel:
+      state: on
+      transition: 10
+      brightness: 255
+      rgb_color: [ 255, 214, 0  ]
+    light.lamp_bank:
+      state: on
+      transition: 10
+      brightness: 255
+      rgb_color: [ 255, 214, 0  ]
+- name: huiskamer veel licht
+  entities:
+    light.hoek_lamp:
+      state: on
+      brightness: 255
+      rgb_color: [ 255, 255, 255  ]
+      color_temp: 200
+    light.keuken_tafel:
+      state: on
+      brightness: 255
+      rgb_color: [ 255, 255, 255  ]
+      color_temp: 200
+    light.lamp_bank:
+      state: on
+      brightness: 255
+      rgb_color: [ 255, 255, 255  ]
+      color_temp: 200
+- name: huiskamer langzaam normaal
+  entities:
+    light.hoek_lamp:
+      state: on
+      transition: 300
+      brightness: 255
+      rgb_color: [ 255, 214, 0  ]
+    light.keuken_tafel:
+      state: on
+      transition: 300
+      brightness: 255
+      rgb_color: [ 255, 214, 0  ]
+    light.lamp_bank:
+      state: on
+      transition: 300
+      brightness: 255
+      rgb_color: [ 255, 214, 0  ]
+- name: huiskamer licht uit
+  entities:
+    light.hoek_lamp:
+      state: off
+    light.keuken_tafel:
+      state: off
+    light.lamp_bank:
+      state: off

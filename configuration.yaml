@@ -1,0 +1,29 @@
+homeassistant:
+  name: Home
+  latitude: !secret latitude
+  longitude: !secret longitude
+  elevation: 1
+  unit_system: metric
+  time_zone: Europe/Amsterdam
+
+frontend:
+
+http:
+
+updater:
+
+discovery:
+
+conversation:
+
+history:
+
+logbook:
+
+sun:
+
+automation: !include_dir_list config/automation/
+group: !include config/groups.yaml
+sensor: !include config/sensors.yaml
+scene: !include config/scenes.yaml
+light: !include config/lights.yaml

@@ -1,0 +1,14 @@
+platform: limitlessled
+bridges:
+  - host: 192.168.1.3
+    groups:
+    - number: 1
+      name: Lamp bank
+      type: rgbw
+    - number: 2
+      name: Keuken tafel
+      type: rgbw
+    - number: 3
+      name: Hoek lamp
+      type: rgbw
+
