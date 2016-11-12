@@ -19,7 +19,6 @@
       state: on
       transition: 10
       brightness: 175
-      temperature: 10
 - name: huiskamer veel licht
   entities:
     light.hoek_lamp:
@@ -41,7 +40,6 @@
       state: on
       transition: 10
       brightness: 255
-      temperature: 0
 - name: huiskamer langzaam normaal
   entities:
     light.hoek_lamp:
@@ -63,7 +61,6 @@
       state: on
       transition: 300
       brightness: 175
-      temperature: 10
 - name: huiskamer licht uit
   entities:
     light.hoek_lamp:
