@@ -4,4 +4,5 @@ huiskamer:
     - light.hoek_lamp
     - light.keuken_tafel
     - light.lamp_bank
+    - light.oma_lamp
 

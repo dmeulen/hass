@@ -11,4 +11,7 @@ bridges:
     - number: 3
       name: Hoek lamp
       type: rgbw
+    - number: 1
+      name: Oma lamp
+      type: white
 

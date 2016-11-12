@@ -15,6 +15,11 @@
       transition: 10
       brightness: 255
       rgb_color: [ 255, 214, 0  ]
+    light.oma_lamp:
+      state: on
+      transition: 10
+      brightness: 175
+      temperature: 10
 - name: huiskamer veel licht
   entities:
     light.hoek_lamp:
@@ -32,6 +37,11 @@
       brightness: 255
       rgb_color: [ 255, 255, 255  ]
       color_temp: 200
+    light.oma_lamp:
+      state: on
+      transition: 10
+      brightness: 255
+      temperature: 0
 - name: huiskamer langzaam normaal
   entities:
     light.hoek_lamp:
@@ -49,6 +59,11 @@
       transition: 300
       brightness: 255
       rgb_color: [ 255, 214, 0  ]
+    light.oma_lamp:
+      state: on
+      transition: 300
+      brightness: 175
+      temperature: 10
 - name: huiskamer licht uit
   entities:
     light.hoek_lamp:
@@ -56,4 +71,6 @@
     light.keuken_tafel:
       state: off
     light.lamp_bank:
+      state: off
+    light.oma_lamp:
       state: off
