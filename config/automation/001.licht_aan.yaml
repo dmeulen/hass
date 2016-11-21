@@ -6,7 +6,6 @@ trigger:
     below: 500
   - platform: time
     after: '06:45'
-    before: '01:15'
 condition: use_trigger_values
 action:
   service: scene.turn_on
