@@ -27,3 +27,4 @@ group: !include config/groups.yaml
 sensor: !include config/sensors.yaml
 scene: !include config/scenes.yaml
 light: !include config/lights.yaml
+arduino: !include config/arduino.yaml
