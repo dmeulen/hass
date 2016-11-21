@@ -13,3 +13,8 @@
     - mediumClouds
     - highClouds
     - dewpointTemperature
+
+- platform: arduino
+  pins:
+    0:
+      name: Light Sensor
