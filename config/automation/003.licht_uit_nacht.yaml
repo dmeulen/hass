@@ -2,7 +2,7 @@ alias: 003 - Licht uit nacht
 hide_entity: True
 trigger:
   platform: time
-  after: "00:38:00"
+  after: "00:41:00"
 action:
   service: light.turn_off
   entity_id: group.huiskamer
