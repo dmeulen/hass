@@ -18,3 +18,4 @@
   pins:
     0:
       name: Light Sensor
+      unit_of_measurement: 'light'
