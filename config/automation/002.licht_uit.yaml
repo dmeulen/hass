@@ -1,11 +1,11 @@
-alias: 001 - Lichten als het donker is
+alias: 001 - Lichten uit
 hide_entity: True
 trigger:
   - platform: numeric_state
     entity_id: sensor.light_sensor
-    above: 500
+    above: 650
   - platform: time
-    after: '06:45'
+    after: '07:00'
 action:
   service: scene.turn_on
   entity_id: scene.huiskamer_huiskamer_licht_uit
