@@ -27,7 +27,7 @@ arduino:
 
 media_player:
   - platform: samsungtv
-		name: tv huiskamer
+    name: tv huiskamer
     host: 192.168.1.10
 
 
