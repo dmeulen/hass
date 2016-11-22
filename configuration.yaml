@@ -25,6 +25,12 @@ sun:
 arduino:
   port: /dev/ttyUSB0
 
+media_player:
+  - platform: samsungtv
+		name: tv huiskamer
+    host: 192.168.1.10
+
+
 automation: !include_dir_list config/automation/
 group: !include config/groups.yaml
 sensor: !include config/sensors.yaml
