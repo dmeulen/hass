@@ -1,19 +1,14 @@
 alias: 001 - Lichten uit
 hide_entity: True
-#trigger:
-#  - platform: numeric_state
-#    entity_id: sensor.light_sensor
-#    above: 700
+trigger:
+  - platform: numeric_state
+    entity_id: sensor.light_sensor
+    above: 700
 #  - platform: time
 #    after: '07:00'
 condition:
-  condition: and
-  conditions:
-    - condition: numeric_state
-      entity_id: sensor.light_sensor
-      above: 700
-    - condition: time
-      after: '07:00'
+  - condition: time
+    after: '07:00'
 action:
   service: light.turn_off
   entity_id: group.huiskamer
