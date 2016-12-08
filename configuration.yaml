@@ -23,7 +23,7 @@ logbook:
 sun:
 
 arduino:
-  port: /dev/arduino
+  port: /dev/ttyUSB0
 
 device_tracker:
   - platform: tplink
