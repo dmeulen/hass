@@ -23,6 +23,12 @@ logbook:
 sun:
 
 emulated_hue:
+  host_ip: 192.168.1.253
+  listen_port: 8300
+  expose_by_default: false
+  exposed_domains:
+    - light
+    - scene
 
 arduino:
   port: /dev/arduino
