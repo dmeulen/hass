@@ -22,6 +22,8 @@ logbook:
 
 sun:
 
+emulated_hue:
+
 arduino:
   port: /dev/arduino
 
