@@ -35,6 +35,8 @@ remote:
   - platform: harmony
     name: Huiskamer
     host: 192.168.1.30
+    activity: "Watch TV"
+    scan_interval: 10
 
 automation: !include_dir_list config/automation/
 group: !include config/groups.yaml

@@ -18,3 +18,9 @@
   pins:
     0:
       name: Light Sensor
+
+- platform: template
+  sensors:
+    huiskamer:
+      value_template: '{{ states.remote.huiskamer.attributes.current_activity }}'
+      friendly_name: 'Huiskamer'
