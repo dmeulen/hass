@@ -6,6 +6,10 @@ trigger:
     below: 660
   - platform: time
     after: '06:45'
+condition:
+  condition: state
+  entity_id: group.all_devices
+  state: home
 action:
   service: scene.turn_on
   entity_id: scene.huiskamer_normaal
