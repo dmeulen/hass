@@ -23,8 +23,8 @@ logbook:
 sun:
 
 emulated_hue:
-  host_ip: 192.168.1.253
-  listen_port: 8300
+  host_ip: 192.168.1.249
+  listen_port: 80
   expose_by_default: true
   exposed_domains:
     - light
