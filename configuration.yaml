@@ -25,11 +25,11 @@ sun:
 arduino:
   port: /dev/arduino
 
-device_tracker:
-  - platform: tplink
-    host: !secret tpl_ip
-    username: !secret tpl_user
-    password: !secret tpl_password
+  #device_tracker:
+  #- platform: tplink
+  #  host: !secret tpl_ip
+  #  username: !secret tpl_user
+  #  password: !secret tpl_password
 
 remote:
   - platform: harmony
