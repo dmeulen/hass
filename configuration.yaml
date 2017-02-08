@@ -18,6 +18,11 @@ conversation:
 
 history:
 
+influxdb:
+  host: 127.0.0.1
+  username: hass
+  password: hass58
+
 logbook:
 
 sun:
