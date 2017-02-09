@@ -46,15 +46,15 @@ switch:
   - platform: command_line
     switches:
       toon_prog_comfort_sleep:
-        command_on: "python /config/scripts/toonclient.py -C 0 -D /srv/hass/.toon.ini"
-        command_off: "python /config/scripts/toonclient.py -C 2 -D /srv/hass/.toon.ini"
+        command_on: "python /srv/hass/.homeassistant/scripts/toonclient.py -C 0 -D /srv/hass/.toon.ini"
+        command_off: "python /srv/hass/.homeassistant/scripts/toonclient.py -C 2 -D /srv/hass/.toon.ini"
 
 # The following swith set Toon to "Home" with the oncmd and sets Toon to "Away" with the offcmd.      
   - platform: command_line
     switches:
       toon_prog_home_away:
-        command_on: "python /config/scripts/toonclient.py -C 1 -D /srv/hass/.toon.ini"
-        command_off: "python /config/scripts/toonclient.py -C 3 -D /srv/hass/.toon.ini"
+        command_on: "python /srv/hass/.homeassistant/scripts/toonclient.py -C 1 -D /srv/hass/.toon.ini"
+        command_off: "python /srv/hass/.homeassistant/scripts/toonclient.py -C 3 -D /srv/hass/.toon.ini"
 
 # Special Scenes to easily activate the different Toon Programm States
 scene:
@@ -73,5 +73,3 @@ scene:
   - name: Toon Away
     entities:
       switch.toon_prog_thuis: off
-
-
