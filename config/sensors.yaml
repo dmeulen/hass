@@ -40,36 +40,3 @@
       value_template: '{{ states.sensor.toon.state.split("\n")[2]  }}'
     toonprogram:
       value_template: '{% if states.sensor.toon.state.split("\n")[3] == "0" %}Comfort{% elif states.sensor.toon.state.split("\n")[3] == "1" %}Home{% elif states.sensor.toon.state.split("\n")[3] == "2" %}Sleep{% elif states.sensor.toon.state.split("\n")[3] == "3" %}Away{% endif %}'
-
-switch:    
-# The following swith set Toon to "Comfort" with the oncmd and sets Toon to "Sleep" with the offcmd.
-  - platform: command_line
-    switches:
-      toon_prog_comfort_sleep:
-        command_on: "python /srv/hass/.homeassistant/scripts/toonclient.py -C 0 -D /srv/hass/.toon.ini"
-        command_off: "python /srv/hass/.homeassistant/scripts/toonclient.py -C 2 -D /srv/hass/.toon.ini"
-
-# The following swith set Toon to "Home" with the oncmd and sets Toon to "Away" with the offcmd.      
-  - platform: command_line
-    switches:
-      toon_prog_home_away:
-        command_on: "python /srv/hass/.homeassistant/scripts/toonclient.py -C 1 -D /srv/hass/.toon.ini"
-        command_off: "python /srv/hass/.homeassistant/scripts/toonclient.py -C 3 -D /srv/hass/.toon.ini"
-
-# Special Scenes to easily activate the different Toon Programm States
-scene:
-  - name: Toon Comfort
-    entities:
-      switch.toon_prog_comfort: on
-
-  - name: Toon Sleep
-    entities:
-      switch.toon_prog_comfort: off
-
-  - name: Toon Home
-    entities:
-      switch.toon_prog_thuis: on
-
-  - name: Toon Away
-    entities:
-      switch.toon_prog_thuis: off
