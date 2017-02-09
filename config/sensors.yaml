@@ -27,7 +27,7 @@
 
 - platform: command_line
   name: toon
-  command: "python /srv/hass/.homeassistant/scripts/toonclient.py -t -p -g -c -D /srv/hass/.toon.ini"
+  command: "python3 /srv/hass/.homeassistant/scripts/toonclient.py -t -p -g -c -D /srv/hass/.toon.ini"
   scan_interval: 60
 
 - platform: template
