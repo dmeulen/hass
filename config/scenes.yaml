@@ -39,6 +39,27 @@
     light.oma_lamp:
       state: on
       brightness: 70
+ - name: huiskamer mfb
+  hide_entiry: True
+  entities:
+    light.hoek_lamp:
+      state: on
+      transition: 30
+      brightness: 200
+      rgb_color: [ 16, 209, 43]
+    light.keuken_tafel:
+      state: on
+      transition: 30
+      brightness: 200
+      rgb_color: [ 229, 119, 9 ]
+    light.lamp_bank:
+      state: on
+      transition: 30
+      brightness: 180
+      rgb_color: [ 229, 119, 9 ]
+    light.oma_lamp:
+      state: on
+      brightness: 70
 - name: huiskamer veel licht
   entities:
     light.hoek_lamp:
