@@ -39,6 +39,7 @@
       state: on
       brightness: 255
 - name: huiskamer langzaam normaal
+  hidden: true
   entities:
     light.hoek_lamp:
       state: on
@@ -66,6 +67,20 @@
       state: off
     light.lamp_bank:
       state: off
+    light.oma_lamp:
+      state: off
+- name: huiskamer licht langzaam uit
+  hidden: true
+  entities:
+    light.hoek_lamp:
+      state: off
+      transition: 60
+    light.keuken_tafel:
+      state: off
+      transition: 60
+    light.lamp_bank:
+      state: off
+      transition: 60
     light.oma_lamp:
       state: off
 - name: Toon Comfort
