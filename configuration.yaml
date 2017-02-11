@@ -38,7 +38,7 @@ customize:
 arduino:
   port: /dev/arduino
 
-  device_tracker:
+device_tracker:
   - platform: tplink
     host: !secret tpl_ip
     username: !secret tpl_user
