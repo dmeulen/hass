@@ -1,0 +1,29 @@
+alias: "TV uit"
+hide_entity: True
+trigger:
+  - platform: state
+    entity_id: remote.huiskamer
+    from: 'on'
+    to: 'off'
+condition:
+  - condition: state
+    entity_id: sun.sun
+    state: 'below_horizon'
+action:
+  service: scene.turn_on
+  entity_id: scene.huiskamer_normaal
+
+alias: "TV aan"
+hide_entity: True
+trigger:
+  - platform: state
+    entity_id: remote.huiskamer
+    from: 'off'
+    to: 'on'
+condition:
+  - condition: state
+    entity_id: sun.sun
+    state: 'below_horizon'
+action:
+  service: scene.turn_on
+  entity_id: scene.huiskamer_tv

@@ -18,6 +18,26 @@
     light.oma_lamp:
       state: on
       brightness: 200
+- name: huiskamer tv
+  entities:
+    light.hoek_lamp:
+      state: on
+      transition: 30
+      brightness: 200
+      rgb_color: [ 29, 42, 224]
+    light.keuken_tafel:
+      state: on
+      transition: 30
+      brightness: 200
+      rgb_color: [ 229, 119, 9 ]
+    light.lamp_bank:
+      state: on
+      transition: 30
+      brightness: 200
+      rgb_color: [ 229, 119, 9 ]
+    light.oma_lamp:
+      state: on
+      brightness: 150
 - name: huiskamer veel licht
   entities:
     light.hoek_lamp:
