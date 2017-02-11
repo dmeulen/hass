@@ -27,14 +27,22 @@ logbook:
 
 sun:
 
+customize:
+  scene.huiskamer_langzaam_normaal:
+    hidden: true
+  scene.huiskamer_licht_langzaam_uit:
+    hidden: true
+  sensor.toon:
+    hidden: true
+
 arduino:
   port: /dev/arduino
 
-  #device_tracker:
-  #- platform: tplink
-  #  host: !secret tpl_ip
-  #  username: !secret tpl_user
-  #  password: !secret tpl_password
+  device_tracker:
+  - platform: tplink
+    host: !secret tpl_ip
+    username: !secret tpl_user
+    password: !secret tpl_password
 
 remote:
   - platform: harmony

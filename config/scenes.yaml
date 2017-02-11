@@ -39,7 +39,6 @@
       state: on
       brightness: 255
 - name: huiskamer langzaam normaal
-  hidden: true
   entities:
     light.hoek_lamp:
       state: on
@@ -70,7 +69,6 @@
     light.oma_lamp:
       state: off
 - name: huiskamer licht langzaam uit
-  hidden: true
   entities:
     light.hoek_lamp:
       state: off
