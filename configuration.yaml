@@ -29,11 +29,13 @@ sun:
 
 customize:
   scene.huiskamer_langzaam_normaal:
-    hidden: true
+    hide_entity: true
   scene.huiskamer_licht_langzaam_uit:
-    hidden: true
+    hide_entity: true
+  scene.huiskamer_tv:
+    hide_entity: true
   sensor.toon:
-    hidden: true
+    hide_entity: true
 
 arduino:
   port: /dev/arduino
