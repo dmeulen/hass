@@ -19,6 +19,7 @@
       state: on
       brightness: 200
 - name: huiskamer tv
+  hide_entiry: True
   entities:
     light.hoek_lamp:
       state: on
@@ -33,11 +34,11 @@
     light.lamp_bank:
       state: on
       transition: 30
-      brightness: 200
+      brightness: 180
       rgb_color: [ 229, 119, 9 ]
     light.oma_lamp:
       state: on
-      brightness: 150
+      brightness: 70
 - name: huiskamer veel licht
   entities:
     light.hoek_lamp:
@@ -62,17 +63,17 @@
   entities:
     light.hoek_lamp:
       state: on
-      transition: 300
+      transition: 30
       brightness: 255
       rgb_color: [ 255, 214, 0  ]
     light.keuken_tafel:
       state: on
-      transition: 300
+      transition: 30
       brightness: 255
       rgb_color: [ 255, 214, 0  ]
     light.lamp_bank:
       state: on
-      transition: 300
+      transition: 30
       brightness: 255
       rgb_color: [ 255, 214, 0  ]
     light.oma_lamp:
