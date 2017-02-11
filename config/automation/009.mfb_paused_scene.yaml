@@ -1,14 +1,14 @@
-alias: "MFB aan"
+alias: "MFB paused"
 hide_entity: True
 trigger:
   - platform: state
     entity_id: media_player.cast_to_mfb
-    from: 'off'
-    to: 'playing'
+    from: 'playing'
+    to: 'paused'
 condition:
   - condition: state
     entity_id: sun.sun
     state: 'below_horizon'
 action:
   service: scene.turn_on
-  entity_id: scene.huiskamer_mfb
+  entity_id: scene.huiskamer_normaal

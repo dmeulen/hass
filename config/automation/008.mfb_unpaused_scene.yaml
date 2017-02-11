@@ -1,9 +1,9 @@
-alias: "MFB aan"
+alias: "MFB unpaused"
 hide_entity: True
 trigger:
   - platform: state
     entity_id: media_player.cast_to_mfb
-    from: 'off'
+    from: 'paused'
     to: 'playing'
 condition:
   - condition: state
