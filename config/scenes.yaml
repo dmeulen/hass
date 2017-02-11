@@ -39,7 +39,7 @@
     light.oma_lamp:
       state: on
       brightness: 70
- - name: huiskamer mfb
+- name: huiskamer mfb
   hide_entiry: True
   entities:
     light.hoek_lamp:
