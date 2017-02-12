@@ -55,11 +55,11 @@
     light.lamp_bank:
       state: on
       transition: 30
-      brightness: 180
+      brightness: 200
       rgb_color: [ 229, 119, 9 ]
     light.oma_lamp:
       state: on
-      brightness: 70
+      brightness: 100
 - name: huiskamer veel licht
   entities:
     light.hoek_lamp:
