@@ -2,17 +2,17 @@
   entities:
     light.hoek_lamp:
       state: on
-      transition: 10
+      #transition: 10
       brightness: 255
       rgb_color: [ 255, 214, 0  ]
     light.keuken_tafel:
       state: on
-      transition: 10
+      #transition: 10
       brightness: 255
       rgb_color: [ 255, 214, 0  ]
     light.lamp_bank:
       state: on
-      transition: 10
+      #transition: 10
       brightness: 255
       rgb_color: [ 255, 214, 0  ]
     light.oma_lamp:
@@ -23,17 +23,17 @@
   entities:
     light.hoek_lamp:
       state: on
-      transition: 30
+      #transition: 30
       brightness: 200
       rgb_color: [ 29, 42, 224]
     light.keuken_tafel:
       state: on
-      transition: 30
+      #transition: 30
       brightness: 200
       rgb_color: [ 229, 119, 9 ]
     light.lamp_bank:
       state: on
-      transition: 30
+      #transition: 30
       brightness: 180
       rgb_color: [ 229, 119, 9 ]
     light.oma_lamp:
@@ -44,17 +44,17 @@
   entities:
     light.hoek_lamp:
       state: on
-      transition: 30
+      #transition: 30
       brightness: 200
       rgb_color: [ 16, 209, 43]
     light.keuken_tafel:
       state: on
-      transition: 30
+      #transition: 30
       brightness: 200
       rgb_color: [ 229, 119, 9 ]
     light.lamp_bank:
       state: on
-      transition: 30
+      #transition: 30
       brightness: 200
       rgb_color: [ 229, 119, 9 ]
     light.oma_lamp:
@@ -84,17 +84,17 @@
   entities:
     light.hoek_lamp:
       state: on
-      transition: 30
+      #transition: 30
       brightness: 255
       rgb_color: [ 255, 214, 0  ]
     light.keuken_tafel:
       state: on
-      transition: 30
+      #transition: 30
       brightness: 255
       rgb_color: [ 255, 214, 0  ]
     light.lamp_bank:
       state: on
-      transition: 30
+      #transition: 30
       brightness: 255
       rgb_color: [ 255, 214, 0  ]
     light.oma_lamp:
@@ -114,13 +114,13 @@
   entities:
     light.hoek_lamp:
       state: off
-      transition: 60
+      #transition: 60
     light.keuken_tafel:
       state: off
-      transition: 60
+      #transition: 60
     light.lamp_bank:
       state: off
-      transition: 60
+      #transition: 60
     light.oma_lamp:
       state: off
 - name: Toon Comfort
