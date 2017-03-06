@@ -2,6 +2,7 @@ platform: limitlessled
 bridges:
   - host: 192.168.1.3
     version: 5
+    port: 8899
     groups:
     - number: 1
       name: Lamp bank
