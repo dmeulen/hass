@@ -8,4 +8,4 @@ trigger:
     after: '06:45'
 action:
   service: scene.turn_on
-  entity_id: scene.huiskamer_normaal
+  entity_id: scene.huiskamer_langzaam_normaal
