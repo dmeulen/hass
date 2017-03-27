@@ -32,15 +32,10 @@ logbook:
 
 sun:
 
-customize:
-  scene.huiskamer_langzaam_normaal:
-    hide_entity: true
-  scene.huiskamer_licht_langzaam_uit:
-    hide_entity: true
-  scene.huiskamer_tv:
-    hide_entity: true
-  sensor.toon:
-    hide_entity: true
+mysensors:
+  gateways:
+    - device: '192.168.1.5'
+    - tcp_port: 5003
 
 arduino:
   port: /dev/arduino
