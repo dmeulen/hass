@@ -25,8 +25,8 @@ config:
 
 influxdb:
   host: 127.0.0.1
-  username: hass
-  password: hass58
+  username: !secret influxdb_user
+  password: !secret influxdb_password
 
 logbook:
 
