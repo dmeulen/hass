@@ -19,7 +19,7 @@
       state: on
       brightness: 200
 - name: huiskamer tv
-  hide_entiry: True
+  hide_entry: True
   entities:
     light.hoek_lamp:
       state: on
@@ -40,7 +40,7 @@
       state: on
       brightness: 70
 - name: huiskamer mfb
-  hide_entiry: True
+  hide_entry: True
   entities:
     light.hoek_lamp:
       state: on
