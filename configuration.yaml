@@ -37,9 +37,6 @@ mysensors:
     - device: '192.168.1.5'
       tcp_port: 5003
 
-arduino:
-  port: /dev/arduino
-
 device_tracker:
   - platform: tplink
     host: !secret tpl_ip
