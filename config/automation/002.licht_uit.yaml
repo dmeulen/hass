@@ -2,8 +2,8 @@ alias: 001 - Lichten uit
 hide_entity: True
 trigger:
   - platform: numeric_state
-    entity_id: sensor.light_sensor
-    above: 710
+    entity_id: sensor.light_sensor_1_0
+    above: 60
 condition:
   - condition: time
     after: '07:00'
