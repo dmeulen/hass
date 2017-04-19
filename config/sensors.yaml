@@ -14,11 +14,6 @@
     - highClouds
     - dewpointTemperature
 
-- platform: arduino
-  pins:
-    0:
-      name: Light Sensor
-
 - platform: template
   sensors:
     huiskamer:
