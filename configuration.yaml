@@ -38,6 +38,7 @@ mysensors:
       tcp_port: 5003
       persistence_file: '/srv/hass/mysensors.json'
   persistence: true
+  version: 1.5
 
 device_tracker:
   - platform: tplink
