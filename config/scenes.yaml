@@ -121,6 +121,25 @@
       transition: 60
     light.oma_lamp:
       state: off
+- name: keuken normaal
+  entities:
+    light.led_strip_keuken_201_5:
+      state: on
+      transition: 60
+      brightness: 255
+      rgb_color: [ 255, 214, 0 ]
+- name: keuken koken
+  entities:
+    light.led_strip_keuken_201_5:
+      state: on
+      transition: 30
+      brightness: 255
+      rgb_color: [ 255, 255, 255 ]
+- name: keuken uit
+  entities:
+    light.led_strip_keuken_201_5:
+      state: off
+      transition: 60
 - name: Toon Comfort
   entities:
     switch.toon_prog_comfort: on
