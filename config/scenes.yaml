@@ -140,15 +140,3 @@
     light.led_strip_keuken_201_5:
       state: off
       transition: 60
-- name: Toon Comfort
-  entities:
-    switch.toon_prog_comfort: on
-- name: Toon Sleep
-  entities:
-    switch.toon_prog_comfort: off
-- name: Toon Home
-  entities:
-    switch.toon_prog_thuis: on
-- name: Toon Away
-  entities:
-    switch.toon_prog_thuis: off

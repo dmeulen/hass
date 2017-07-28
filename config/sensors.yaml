@@ -1,18 +1,12 @@
-- platform: yr
+- platform: buienradar
   monitored_conditions:
     - temperature
     - symbol
     - precipitation
-    - windSpeed
+    - windspeed
     - pressure
-    - windDirection
+    - winddirection
     - humidity
-    - fog
-    - cloudiness
-    - lowClouds
-    - mediumClouds
-    - highClouds
-    - dewpointTemperature
 
 - platform: template
   sensors:
