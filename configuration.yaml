@@ -42,6 +42,7 @@ mysensors:
 
 device_tracker:
   - platform: asuswrt
+    mode: ap
     host: !secret asus_ip
     username: !secret asus_user
     password: !secret asus_password
