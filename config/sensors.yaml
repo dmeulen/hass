@@ -39,5 +39,5 @@
 - platform: template
   sensors:
     lightlevel_battery:
-      unit_of_mesurement: '%'
+      unit_of_measurement: '%'
       value_template: '{{ states.sensor.light_sensor_1_0.attributes.battery_level }}'
