@@ -32,10 +32,9 @@ logbook:
 
 sun:
 
-toon:
-  username: !secret toon_username
-  password: !secret toon_password
-
+#toon:
+  #username: !secret toon_username
+  #password: !secret toon_password
 
 mysensors:
   gateways:
