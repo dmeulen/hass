@@ -3,101 +3,101 @@
     light.hoek_lamp:
       state: on
       transition: 10
-      brightness: 255
+      brightness_pct: 100
       rgb_color: [ 255, 214, 0  ]
     light.keuken_tafel:
       state: on
       transition: 10
-      brightness: 255
+      brightness_pct: 100
       rgb_color: [ 255, 214, 0  ]
     light.lamp_bank:
       state: on
       transition: 10
-      brightness: 255
+      brightness_pct: 100
       rgb_color: [ 255, 214, 0  ]
     light.oma_lamp:
       state: on
-      brightness: 200
+      brightness_pct: 100
 - name: huiskamer tv
   entities:
     light.hoek_lamp:
       state: on
       transition: 30
-      brightness: 200
+      brightness_pct: 80
       rgb_color: [ 29, 42, 224]
     light.keuken_tafel:
       state: on
       transition: 30
-      brightness: 200
+      brightness_pct: 80
       rgb_color: [ 229, 119, 9 ]
     light.lamp_bank:
       state: on
       transition: 30
-      brightness: 180
+      brightness_pct: 60
       rgb_color: [ 229, 119, 9 ]
     light.oma_lamp:
       state: on
-      brightness: 70
+      brightness_pct: 30
 - name: huiskamer mfb
   entities:
     light.hoek_lamp:
       state: on
       transition: 30
-      brightness: 200
+      brightness_pct: 80
       rgb_color: [ 16, 209, 43]
     light.keuken_tafel:
       state: on
       transition: 30
-      brightness: 200
+      brightness_pct: 80
       rgb_color: [ 229, 119, 9 ]
     light.lamp_bank:
       state: on
       transition: 30
-      brightness: 200
+      brightness_pct: 80
       rgb_color: [ 229, 119, 9 ]
     light.oma_lamp:
       state: on
-      brightness: 100
+      brightness_pct: 40
 - name: huiskamer veel licht
   entities:
     light.hoek_lamp:
       state: on
-      brightness: 255
+      brightness_pct: 100
       rgb_color: [ 255, 255, 255  ]
       color_temp: 200
     light.keuken_tafel:
       state: on
-      brightness: 255
+      brightness_pct: 100
       rgb_color: [ 255, 255, 255  ]
       color_temp: 200
     light.lamp_bank:
       state: on
-      brightness: 255
+      brightness_pct: 100
       rgb_color: [ 255, 255, 255  ]
       color_temp: 200
     light.oma_lamp:
       state: on
-      brightness: 255
+      brightness_pct: 100
 - name: huiskamer langzaam normaal
   entities:
     light.hoek_lamp:
       state: on
       transition: 60
-      brightness: 255
+      brightness_pct: 100
       rgb_color: [ 255, 214, 0  ]
     light.keuken_tafel:
       state: on
       transition: 60
-      brightness: 255
+      brightness_pct: 100
       rgb_color: [ 255, 214, 0  ]
     light.lamp_bank:
       state: on
       transition: 60
-      brightness: 255
+      brightness_pct: 100
       rgb_color: [ 255, 214, 0  ]
     light.oma_lamp:
       state: on
-      brightness: 175
+      brightness_pct: 70
 - name: huiskamer licht uit
   entities:
     light.hoek_lamp:
@@ -126,14 +126,14 @@
     light.led_strip_keuken_201_5:
       state: on
       transition: 60
-      brightness: 255
+      brightness_pct: 100
       rgb_color: [ 255, 214, 0 ]
 - name: keuken koken
   entities:
     light.led_strip_keuken_201_5:
       state: on
       transition: 30
-      brightness: 255
+      brightness_pct: 100
       rgb_color: [ 255, 255, 255 ]
 - name: keuken uit
   entities:

@@ -7,13 +7,17 @@ bridges:
     - number: 1
       name: Lamp bank
       type: rgbw
+      fade: on
     - number: 2
       name: Keuken tafel
       type: rgbw
+      fade: on
     - number: 3
       name: Hoek lamp
       type: rgbw
+      fade: on
     - number: 1
       name: Oma lamp
       type: white
+      fade: on
 
