@@ -1,8 +1,8 @@
 alias: 001.email_battery_level
-hide_entiry: false
+hide_entry: false
 trigger:
   - platform: numeric_state
-    entiry_id: sensor.lightlevel_battery
+    entry_id: sensor.lightlevel_battery
     below: 93
 action:
   service: notify.email_danny
