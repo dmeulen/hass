@@ -41,10 +41,10 @@ mysensors:
   version: 1.5
 
 device_tracker:
-  - platform: tplink
-    host: !secret tpl_ip
-    username: !secret tpl_user
-    password: !secret tpl_password
+  - platform: asuswrt
+    host: !secret asus_ip
+    username: !secret asus_user
+    password: !secret asus_password
 
 remote:
   - platform: harmony
