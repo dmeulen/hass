@@ -20,22 +20,6 @@
       value_template: '{{ states.remote.huiskamer.attributes.current_activity }}'
       friendly_name: 'Huiskamer'
 
-- platform: command_line
-  name: toon
-  command: "python3 /srv/hass/.homeassistant/scripts/toonclient.py -t -p -g -c -D /srv/hass/.toon.ini"
-  scan_interval: 300
-
-- platform: template
-  sensors:
-    toontemp:
-      value_template: '{{ states.sensor.toon.state.split("\n")[0]  }}'
-    toonpowerusage:
-      value_template: '{{ states.sensor.toon.state.split("\n")[1]  }}'
-    toongasusage:
-      value_template: '{{ states.sensor.toon.state.split("\n")[2]  }}'
-    toonprogram:
-      value_template: '{% if states.sensor.toon.state.split("\n")[3] == "0" %}Comfort{% elif states.sensor.toon.state.split("\n")[3] == "1" %}Home{% elif states.sensor.toon.state.split("\n")[3] == "2" %}Sleep{% elif states.sensor.toon.state.split("\n")[3] == "3" %}Away{% endif %}'
-
 - platform: template
   sensors:
     lightlevel_battery:
