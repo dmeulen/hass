@@ -1,0 +1,12 @@
+alias: 001.email_battery_level
+hide_entiry: false
+trigger:
+  - platform: numeric_state
+    entiry_id: sensor.lightlevel_battery
+    below: 93
+action:
+  service: notify.email_danny
+  data:
+    title: 'Low Battery level'
+    message: 'Light level metering device needs a battery charge'
+

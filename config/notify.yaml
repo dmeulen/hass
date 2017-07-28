@@ -1,0 +1,10 @@
+email_danny:
+  - name: email_danny
+    platform: smtp
+    server: mx001.anna.lan
+    port: 25
+    timeout: 30
+    sender: danny@cb750k6.nl
+    recipient:
+      - danny@cb750k6.nl
+    sender_name: Home Assistant

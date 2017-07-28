@@ -59,3 +59,4 @@ sensor: !include config/sensors.yaml
 scene: !include config/scenes.yaml
 light: !include config/lights.yaml
 switch: !include config/switch.yaml
+notify: !include config/notify.yaml
