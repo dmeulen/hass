@@ -34,7 +34,7 @@ sun:
 
 toon:
   username: !secret toon_username
-  password: !secreet toon_password
+  password: !secret toon_password
 
 
 mysensors:
