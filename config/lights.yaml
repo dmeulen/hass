@@ -5,19 +5,19 @@ bridges:
     port: 8899
     groups:
     - number: 1
-      name: Lamp bank
+      name: lamp_bank
       type: rgbw
       fade: on
     - number: 2
-      name: Keuken tafel
+      name: keuken_tafel
       type: rgbw
       fade: on
     - number: 3
-      name: Hoek lamp
+      name: hoek_lamp
       type: rgbw
       fade: on
     - number: 1
-      name: Oma lamp
+      name: oma_lamp
       type: white
       fade: on
 

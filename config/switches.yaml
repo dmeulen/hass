@@ -1,6 +1,6 @@
 - platform: template
   switches:
-    huiskamer:
+    huiskamer_light_switch:
       value_template: "{{ is_state('group.all_lights', 'on') }}"
       turn_on:
         service: scene.turn_on
