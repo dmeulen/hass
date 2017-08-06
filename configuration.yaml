@@ -5,6 +5,7 @@ homeassistant:
   elevation: 1
   unit_system: metric
   time_zone: Europe/Amsterdam
+  customize: !include config/customize.yaml
 
 frontend:
 
@@ -59,7 +60,6 @@ remote:
     scan_interval: 10
 
 automation: !include_dir_list config/automation/
-customize: !include config/customize.yaml
 group: !include config/groups.yaml
 sensor: !include config/sensors.yaml
 scene: !include config/scenes.yaml
