@@ -26,6 +26,7 @@ sensor.br_pressure:
   hide: true
 sensor.br_symbol:
   friendly_name: Bewolking
+  hide: true
 sensor.br_temperature:
   friendly_name: Temperatuur
 sensor.br_wind_direction:
@@ -37,7 +38,7 @@ sensor.br_wind_speed:
 sensor.huiskamer:
   friendly_name: Media
 sensor.light_sensor_1_0:
-  friendly_name: Licht percentage
+  friendly_name: Licht
 sensor.lightlevel_battery:
   friendly_name: Batterij Licht Sensor
 
