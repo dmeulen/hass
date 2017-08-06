@@ -18,23 +18,23 @@ switch.huiskamer_light_switch:
   icon: mdi:home
 sensor.br_humidity:
   friendly_name: Lucht Vochtigheid
-  hide: true
+  hidden: true
 sensor.br_precipitation:
   friendly_name: Neerslag
 sensor.br_pressure:
   friendly_name: Luchtdruk
-  hide: true
+  hidden: true
 sensor.br_symbol:
   friendly_name: Bewolking
-  hide: true
+  hidden: true
 sensor.br_temperature:
   friendly_name: Temperatuur
 sensor.br_wind_direction:
   friendly_name: Wind righting
-  hide: true
+  hidden: true
 sensor.br_wind_speed:
   friendly_name: Wind snelheid
-  hide: true
+  hidden: true
 sensor.huiskamer:
   friendly_name: Media
 sensor.light_sensor_1_0:
