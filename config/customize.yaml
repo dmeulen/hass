@@ -16,3 +16,24 @@ light.led_strip_keuken_201_5:
 switch.huiskamer_light_switch:
   friendly_name: Huiskamer alle lampen
   icon: mdi:home
+sensor.br_humidity:
+  friendly_name: Lucht Vochtigheid
+sensor.br_precipitation:
+  friendly_name: Neerslag
+sensor.br_pressure:
+  friendly_name: Luchtdruk
+sensor.br_symbol:
+  friendly_name: Bewolking
+sensor.br_temperature:
+  friendly_name: Temperatuur
+sensor.br_wind_direction:
+  friendly_name: Wind righting
+sensor.br_wind_speed:
+  friendly_name: Wind snelheid
+sensor.huiskamer:
+  friendly_name: Media
+sensor.light_sensor_1_0:
+  friendly_name: Licht percentage
+sensor.lightlevel_battery:
+  friendly_name: Batterij Licht Sensor
+
