@@ -58,12 +58,8 @@ remote:
     activity: "Watch TV"
     scan_interval: 10
 
-customize:
-  hoek_lamp:
-    friendly_name: Hoek lamp
-    icon: mdi:lightbulb
-
 automation: !include_dir_list config/automation/
+customize: !include config/customize.yaml
 group: !include config/groups.yaml
 sensor: !include config/sensors.yaml
 scene: !include config/scenes.yaml
