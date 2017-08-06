@@ -1,3 +1,18 @@
 light.hoek_lamp:
   friendly_name: Hoek lamp
   icon: mdi:lightbulb
+light.keuken_tafel:
+  friendly_name: Keukentafel Lamp
+  icon: mdi:lightbulb
+light.lamp_bank:
+  friendly_name: Bank Lamp
+  icon: mdi:lightbulb
+light.oma_lamp:
+  friendly_name: Oma Lamp
+  icon: mdi:lightbulb
+light.led_strip_keuken_201_5:
+  friendly_name: Keuken LED
+  icon: mdi:led-strip
+switch.huiskamer_light_switch:
+  friendly_name: Huiskamer alle lampen
+  icon: mdi:home
