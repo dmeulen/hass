@@ -60,6 +60,13 @@ remote:
     activity: "Watch TV"
     scan_interval: 10
 
+input_slider:
+  huiskamer_brightness:
+    name: Brightness
+    min: 0
+    max: 255
+    step: 5
+
 automation: !include_dir_list config/automation/
 group: !include config/groups.yaml
 sensor: !include config/sensors.yaml
