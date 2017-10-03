@@ -1,5 +1,5 @@
 alias: 001.email_battery_level
-hide_entity: false
+hide_entity: true
 trigger:
   - platform: numeric_state
     entity_id: sensor.lightlevel_battery
