@@ -2,7 +2,7 @@
   entities:
     light.hoek_lamp:
       state: on
-      brightness_pct: 100
+      brightness_pct: 101
       rgb_color: [ 255, 214, 0  ]
     light.keuken_tafel:
       state: on
