@@ -2,17 +2,14 @@
   entities:
     light.hoek_lamp:
       state: on
-      transition: 10
       brightness_pct: 100
       rgb_color: [ 255, 214, 0  ]
     light.keuken_tafel:
       state: on
-      transition: 10
       brightness_pct: 100
       rgb_color: [ 255, 214, 0  ]
     light.lamp_bank:
       state: on
-      transition: 10
       brightness_pct: 100
       rgb_color: [ 255, 214, 0  ]
     light.oma_lamp:
@@ -22,17 +19,14 @@
   entities:
     light.hoek_lamp:
       state: on
-      transition: 30
       brightness_pct: 80
       rgb_color: [ 29, 42, 224]
     light.keuken_tafel:
       state: on
-      transition: 30
       brightness_pct: 80
       rgb_color: [ 229, 119, 9 ]
     light.lamp_bank:
       state: on
-      transition: 30
       brightness_pct: 60
       rgb_color: [ 229, 119, 9 ]
     light.oma_lamp:
@@ -42,17 +36,14 @@
   entities:
     light.hoek_lamp:
       state: on
-      transition: 30
       brightness_pct: 80
       rgb_color: [ 16, 209, 43]
     light.keuken_tafel:
       state: on
-      transition: 30
       brightness_pct: 80
       rgb_color: [ 229, 119, 9 ]
     light.lamp_bank:
       state: on
-      transition: 30
       brightness_pct: 80
       rgb_color: [ 229, 119, 9 ]
     light.oma_lamp:
@@ -82,17 +73,14 @@
   entities:
     light.hoek_lamp:
       state: on
-      transition: 60
       brightness_pct: 100
       rgb_color: [ 255, 214, 0  ]
     light.keuken_tafel:
       state: on
-      transition: 60
       brightness_pct: 100
       rgb_color: [ 255, 214, 0  ]
     light.lamp_bank:
       state: on
-      transition: 60
       brightness_pct: 100
       rgb_color: [ 255, 214, 0  ]
     light.oma_lamp:
