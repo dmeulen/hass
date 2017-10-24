@@ -16,7 +16,6 @@ http:
     - 127.0.0.1
     - !secret trusted_home_network
 
-
 updater:
 
 discovery:
