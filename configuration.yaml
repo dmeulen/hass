@@ -31,7 +31,7 @@ influxdb:
 
 toon:
   username: !secret toon_username
-  password: !secret toon_pasword
+  password: !secret toon_password
 
 logbook:
 
