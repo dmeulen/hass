@@ -29,6 +29,10 @@ influxdb:
   username: !secret influxdb_user
   password: !secret influxdb_password
 
+toon:
+  username: !secret toon_username
+  password: !secret toon_pasword
+
 logbook:
 
 sun:
