@@ -20,11 +20,3 @@
         name: oma_lamp
         type: white
         fade: on
-
-- platform: grouped_light
-  name: 'Grouped light'
-  entities:
-    - light.lamp_bank
-    - light.keuken_tafel
-    - light.hoek_lamp
-    - light.oma_lamp
