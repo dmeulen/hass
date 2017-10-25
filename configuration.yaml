@@ -39,6 +39,15 @@ toon:
   username: !secret toon_username
   password: !secret toon_password
 
+google_assistant:
+  project_id: !secret ga_project_id
+  client_id: !secret ga_client_id
+  access_token: !secret ga_access_token
+  exposed_domains:
+    - switch
+    - light
+    - group
+
 logbook:
 
 sun:
