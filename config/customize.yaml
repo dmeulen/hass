@@ -4,6 +4,8 @@ light.hoek_lamp:
 light.keuken_tafel:
   friendly_name: Keukentafel Lamp
   icon: mdi:lightbulb
+  google_assistant: true
+  google_assistant_name: kitchen table
 light.lamp_bank:
   friendly_name: Bank Lamp
   icon: mdi:lightbulb
@@ -16,6 +18,17 @@ light.led_strip_keuken_201_5:
 switch.huiskamer_light_switch:
   friendly_name: Huiskamer alle lampen
   icon: mdi:home
+  google_assistant: true
+  google_assistant_name: all lights
+scene.huiskamer_normaal:
+  google_assistant: true
+  google_assistant_name: normal scene
+scene.huiskamer_tv:
+  google_assistant: true
+  google_assistant_name: tv scene
+scene.huiskamer_mfb:
+  google_assistant: true
+  google_assistant_name: cozy scene
 sensor.br_humidity:
   friendly_name: Lucht Vochtigheid
   hidden: true

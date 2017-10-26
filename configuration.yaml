@@ -48,6 +48,7 @@ google_assistant:
     - light
     - group
     - scene
+    - media_player
 
 logbook:
 
