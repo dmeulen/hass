@@ -48,8 +48,6 @@ google_assistant:
     - light
     - group
     - scene
-    - remote
-    - climate
 
 logbook:
 
