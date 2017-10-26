@@ -47,6 +47,9 @@ google_assistant:
     - switch
     - light
     - group
+    - scene
+    - remote
+    - climate
 
 logbook:
 
