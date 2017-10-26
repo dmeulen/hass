@@ -39,6 +39,9 @@ toon:
   username: !secret toon_username
   password: !secret toon_password
 
+climate:
+  platform: toon
+
 google_assistant:
   project_id: !secret ga_project_id
   client_id: !secret ga_client_id
@@ -49,6 +52,7 @@ google_assistant:
     - group
     - scene
     - media_player
+    - climate
 
 logbook:
 
