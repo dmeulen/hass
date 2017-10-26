@@ -28,7 +28,10 @@ scene.huiskamer_tv:
   google_assistant_name: tv scene
 scene.huiskamer_mfb:
   google_assistant: true
-  google_assistant_name: cozy scene
+  google_assistant_name: cosy scene
+remote.huiskamer:
+  google_assistant: true
+  google_assistant_name: television
 sensor.br_humidity:
   friendly_name: Lucht Vochtigheid
   hidden: true
