@@ -70,14 +70,6 @@ mysensors:
   version: 1.5
 
 device_tracker:
-  - platform: asuswrt
-    mode: ap
-    host: !secret asus_ip
-    username: !secret asus_user
-    password: !secret asus_password
-    track_new_devices: no
-
-device_tracker:
   - platform: owntracks_http
     waypoint_whitelist:
       - danny
