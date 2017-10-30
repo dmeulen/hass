@@ -85,6 +85,8 @@ remote:
 
 zone:
   - name: Home
+    latitude: !secret latitude
+    longitude: !secret longitude
     radius: 400
 
 automation: !include_dir_list config/automation/
