@@ -77,6 +77,11 @@ device_tracker:
     password: !secret asus_password
     track_new_devices: no
 
+device_tracker:
+  - platform: owntracks_http
+    waypoint_whitelist:
+      - danny
+
 remote:
   - platform: harmony
     name: Huiskamer
