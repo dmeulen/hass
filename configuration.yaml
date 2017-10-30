@@ -83,6 +83,10 @@ remote:
     activity: "Watch TV"
     scan_interval: 10
 
+zone:
+  - name: Home
+    radius: 400
+
 automation: !include_dir_list config/automation/
 group: !include config/groups.yaml
 sensor: !include config/sensors.yaml
