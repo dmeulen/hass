@@ -9,11 +9,11 @@ condition:
     conditions:
       - condition: time
         after: '07:00'
-      - condition: or
+      - condition: and
         conditions:
           - condition: state
             entity_id: input_boolean.guest_switch
-            state: 'on'
+            state: 'off'
           - condition: state
             entity_id: group.all_devices
             state: 'not_home'
