@@ -1,0 +1,16 @@
+alias: verwarming away
+hide_entity: True
+trigger:
+  - platform: state
+    entity_id: group.all_devices
+    from: 'home'
+    to: 'not_home'
+condition:
+  - condition: state
+    entity_id: input_boolean.guest_switch
+    state: 'off'
+action:
+  - service: climate.set_away_mode
+    data:
+      entity_id: climate.toon_van_eneco
+      away_mode: 'on'
