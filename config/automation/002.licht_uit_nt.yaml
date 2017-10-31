@@ -1,9 +1,9 @@
-alias: 002 - Lichten uit
+alias: 002 - Lichten uit nt
 hide_entity: True
 trigger:
   - platform: numeric_state
     entity_id: sensor.light_sensor_1_0
-    above: 67
+    above: 48
 condition:
   - condition: and
     conditions:
@@ -11,7 +11,7 @@ condition:
         after: '07:00'
       - condition: state
         entity_id: group.all_devices
-        state: 'home'
+        state: 'not_home'
 action:
   service: scene.turn_on
   entity_id: scene.huiskamer_licht_langzaam_uit
