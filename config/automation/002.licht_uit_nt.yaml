@@ -9,9 +9,14 @@ condition:
     conditions:
       - condition: time
         after: '07:00'
-      - condition: state
-        entity_id: group.all_devices
-        state: 'not_home'
+      - condition: or
+        conditions:
+          - condition: state
+            entity_id: input_boolean.guest_switch
+            state: 'on'
+          - condition: state
+            entity_id: group.all_devices
+            state: 'not_home'
 action:
   service: scene.turn_on
   entity_id: scene.huiskamer_licht_langzaam_uit
