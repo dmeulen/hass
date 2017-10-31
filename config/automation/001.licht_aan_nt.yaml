@@ -1,0 +1,15 @@
+alias: 001 - Lichten aan als het donker is en niet thuis
+hide_entity: True
+trigger:
+  - platform: numeric_state
+    entity_id: sensor.light_sensor_1_0
+    below: 42
+  - platform: time
+    at: '06:45'
+condition:
+  - condition: state
+    entity_id: group.all_devices
+    state: 'not_home'
+action:
+  service: scene.turn_on
+  entity_id: scene.huiskamer_langzaam_normaal
