@@ -9,6 +9,10 @@ homeassistant:
 
 frontend:
 
+recorder:
+  purge_interval: 1
+  purge_keep_days: 14
+
 map:
 
 http:
