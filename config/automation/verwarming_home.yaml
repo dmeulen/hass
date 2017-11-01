@@ -10,7 +10,7 @@ condition:
     entity_id: input_boolean.guest_switch
     state: 'off'
 action:
-  - service: climate.operation_mode
+  - service: climate.set_operation_mode
     data:
       entity_id: climate.toon_van_eneco
       operation_mode: 'Heat'
