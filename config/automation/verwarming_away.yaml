@@ -13,4 +13,4 @@ action:
   - service: climate.set_operation_mode
     data:
       entity_id: climate.toon_van_eneco
-      away_mode: 'Eco'
+      operation_mode: 'Eco'
