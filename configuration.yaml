@@ -93,6 +93,7 @@ input_boolean:
   guest_switch:
     name: Guest switch
     initial: off
+    restore: startup
 
 automation: !include_dir_list config/automation/
 group: !include config/groups.yaml
