@@ -7,16 +7,10 @@ homeassistant:
   time_zone: Europe/Amsterdam
   customize: !include config/customize.yaml
 
-frontend:
-
-config:
-
 recorder:
   purge_interval: 1
   purge_keep_days: 14
   db_url: !secret db_url
-
-map:
 
 http:
   api_password: !secret api_password
@@ -26,21 +20,31 @@ http:
     - 127.0.0.1
     - !secret trusted_home_network
 
+influxdb:
+  host: 127.0.0.1
+  username: !secret influxdb_user
+  password: !secret influxdb_password
+
+frontend:
+
+#config:
+
+map:
+
 updater:
 
 discovery:
-
-media_player:
-  - platform: cast
 
 conversation:
 
 history:
 
-influxdb:
-  host: 127.0.0.1
-  username: !secret influxdb_user
-  password: !secret influxdb_password
+logbook:
+
+sun:
+
+media_player:
+  - platform: cast
 
 toon:
   username: !secret toon_username
@@ -63,10 +67,6 @@ google_assistant:
 
 tts:
   - platform: google
-
-logbook:
-
-sun:
 
 mysensors:
   gateways:
