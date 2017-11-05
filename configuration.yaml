@@ -27,8 +27,6 @@ influxdb:
 
 frontend:
 
-#config:
-
 map:
 
 updater:
