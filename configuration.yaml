@@ -44,9 +44,9 @@ sun:
 media_player:
   - platform: cast
 
-toon:
-  username: !secret toon_username
-  password: !secret toon_password
+    #toon:
+    #  username: !secret toon_username
+    #  password: !secret toon_password
 
 climate:
   platform: toon
