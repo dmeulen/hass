@@ -12,14 +12,14 @@
 - platform: template
   switches:
     guest_switch:
-      value_template: "{{ is_state('device_tracker.guest_at_home', 'not_home') }}"
+      value_template: "{{ is_state('device_tracker.guest_at_home', 'home') }}"
       turn_on:
         service: device_tracker.see
         entity_id: device_tracker.guest_at_home
         data:
-          state: "home"
+          location_name: "home"
       turn_off:
         service: device_tracker.see
         entity_id: device_tracker.guest_at_home
         data:
-          state: "not_home"
+          location_name: "not_home"
