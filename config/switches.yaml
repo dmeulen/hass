@@ -15,11 +15,11 @@
       value_template: "{{ is_state('device_tracker.guest_at_home', 'home') }}"
       turn_on:
         service: device_tracker.see
-        entity_id: device_tracker.guest_at_home
         data:
+          dev_id: guest_at_home
           location_name: "home"
       turn_off:
         service: device_tracker.see
-        entity_id: device_tracker.guest_at_home
         data:
+          dev_id: guest_at_home
           location_name: "not_home"
