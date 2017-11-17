@@ -3,7 +3,7 @@ hide_entity: True
 trigger:
   - platform: numeric_state
     entity_id: sensor.light_sensor_1_0
-    below: 32
+    below: 12
   - platform: time
     at: '06:45'
 condition:
