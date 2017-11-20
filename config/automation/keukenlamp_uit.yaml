@@ -2,11 +2,10 @@ alias: Licht uit
 trigger:
   platform: state
   entity_id: binary_sensor.keuken_sensor_202_2
+  from: 'on'
   to: 'off'
   for:
     seconds: 10
 action:
-  service: homeassistant.turn_off
-  entity_id:
-    - switch.keuken_sensor_202_3
-    - binary_sensor.keuken_sensor_202_2
+  service: switch.turn_off
+  entity_id: switch.keuken_sensor_202_3

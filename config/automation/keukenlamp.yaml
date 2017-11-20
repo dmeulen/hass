@@ -2,6 +2,7 @@ alias: Licht aan bij beweging
 trigger:
   platform: state
   entity_id: binary_sensor.keuken_sensor_202_2
+  from: 'off'
   to: 'on'
 action:
   service: switch.turn_on
