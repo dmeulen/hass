@@ -71,7 +71,7 @@ mysensors:
       tcp_port: 5003
       persistence_file: !secret mysensors_persistence
   persistence: true
-  version: 1.5
+  version: 2.0
 
 device_tracker:
   - platform: owntracks_http
