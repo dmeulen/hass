@@ -4,7 +4,7 @@ trigger:
   entity_id: binary_sensor.keuken_sensor_202_2
   to: 'off'
   for:
-    seconds: 5
+    seconds: 10
 action:
-  service: homeassistant.turn_off
+  service: switch.turn_off
   entity_id: switch.keuken_sensor_202_3

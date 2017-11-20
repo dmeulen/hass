@@ -4,5 +4,5 @@ trigger:
   entity_id: binary_sensor.keuken_sensor_202_2
   to: 'on'
 action:
-  service: homeassistant.turn_on
+  service: switch.turn_on
   entity_id: switch.keuken_sensor_202_3
