@@ -95,6 +95,19 @@ zone:
     #    name: Guest switch
     #    initial: off
 
+input_select:
+  radio_station:
+    name: Radio Station
+    options:
+      - Radio 1
+      - Radio 2
+      - 3FM
+      - 3FM Alt
+      - Radio 4
+      - BNR
+    initial: None
+    icon: mdi:radio
+
 automation: !include_dir_list config/automation/
 group: !include config/groups.yaml
 sensor: !include config/sensors.yaml
