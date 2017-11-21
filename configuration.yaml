@@ -105,6 +105,7 @@ input_select:
       - 3FM Alt
       - Radio 4
       - BNR
+      - None
     initial: None
     icon: mdi:radio
 
