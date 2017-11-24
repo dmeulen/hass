@@ -129,11 +129,6 @@ zone:
     longitude: !secret longitude
     radius: 400
 
-    #input_boolean:
-    #  guest_switch:
-    #    name: Guest switch
-    #    initial: off
-
 input_select:
   radio_station:
     name: Radio Station
