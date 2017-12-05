@@ -14,4 +14,4 @@ condition:
         state: 'not_home'
 action:
   service: homeassistant.turn_off
-  entity_id: grouo.all_lights
+  entity_id: group.all_lights
