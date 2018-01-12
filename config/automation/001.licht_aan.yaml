@@ -7,6 +7,7 @@ trigger:
   - platform: time
     at: '06:45'
   - platform: state
+    entity_id: group.all_devices
     from: 'not_home'
     to: 'home'
 condition:
