@@ -1,0 +1,19 @@
+alias: Keuken lamp aan bij beweging
+trigger:
+  platform: state
+  enitity_id: binary_sensor.keuken_arduino_7_2
+  to: 'on'
+action:
+  service: homeassistant.turn_on
+  entity_id: switch.keuken_arduino_7_0
+
+alias: Keuken lamp uit na beweging
+trigger:
+  platform: state
+  entity_id: binary_sensor.keuken_arduino_7_2
+  to: 'off'
+  for:
+    minutes: 1
+action:
+  service: homeassistant.turn_off
+  entity_id: switch.keuken_arduino_7_0
