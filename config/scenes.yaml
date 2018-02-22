@@ -18,7 +18,7 @@
     light.keuken_arduino_7_1:
       state: on
       brightness_pct: 70
-      rgb_color: [ 255, 214, 0 ]
+      rgb_color: [ 255, 64, 0 ]
 - name: huiskamer tv
   entities:
     light.hoek_lamp:
@@ -36,11 +36,10 @@
     light.oma_lamp:
       state: on
       brightness_pct: 30
-
     light.keuken_arduino_7_1:
       state: on
-      brightness_pct: 70
-      rgb_color: [ 255, 214, 0 ]
+      brightness_pct: 50
+      rgb_color: [ 255, 64, 0 ]
 - name: huiskamer mfb
   entities:
     light.hoek_lamp:
@@ -60,8 +59,8 @@
       brightness_pct: 40
     light.keuken_arduino_7_1:
       state: on
-      brightness_pct: 70
-      rgb_color: [ 255, 214, 0 ]
+      brightness_pct: 50
+      rgb_color: [ 255, 64, 0 ]
 - name: huiskamer veel licht
   entities:
     light.hoek_lamp:
@@ -84,8 +83,8 @@
       brightness_pct: 100
     light.keuken_arduino_7_1:
       state: on
-      brightness_pct: 70
-      rgb_color: [ 255, 214, 0 ]
+      brightness_pct: 50
+      rgb_color: [ 255, 64, 0 ]
 - name: huiskamer langzaam normaal
   entities:
     light.hoek_lamp:
@@ -105,8 +104,8 @@
       brightness_pct: 70
     light.keuken_arduino_7_1:
       state: on
-      brightness_pct: 70
-      rgb_color: [ 255, 214, 0 ]
+      brightness_pct: 50
+      rgb_color: [ 255, 64, 0 ]
 - name: huiskamer licht uit
   entities:
     light.hoek_lamp:
