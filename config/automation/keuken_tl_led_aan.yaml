@@ -1,7 +1,7 @@
 alias: Keuken lamp aan bij beweging
 trigger:
   - platform: state
-    enitity_id: binary_sensor.keuken_arduino_7_2
+    entity_id: binary_sensor.keuken_arduino_7_2
     to: 'on'
 action:
   - service: homeassistant.turn_on
