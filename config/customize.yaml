@@ -12,7 +12,7 @@ light.lamp_bank:
 light.oma_lamp:
   friendly_name: Oma Lamp
   icon: mdi:lightbulb
-light.led_strip_keuken_201_5:
+light.keuken_arduino_7_1:
   friendly_name: Keuken LED
   icon: mdi:led-strip
 switch.huiskamer_light_switch:

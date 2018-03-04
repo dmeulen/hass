@@ -5,8 +5,4 @@ huiskamer:
     - light.keuken_tafel
     - light.lamp_bank
     - light.oma_lamp
-
-keuken:
-  name: Keuken
-  entities:
-    - light.led_strip_keuken_201_5
+    - light.keuken_arduino_7_1
