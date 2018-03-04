@@ -60,7 +60,7 @@
     light.keuken_arduino_7_1:
       state: on
       brightness_pct: 40
-      rgb_color: [ 255, 64, 0 ]
+      rgb_color: [ 229, 119, 0 ]
 - name: huiskamer veel licht
   entities:
     light.hoek_lamp:
