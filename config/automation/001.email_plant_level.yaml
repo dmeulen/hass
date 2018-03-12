@@ -1,0 +1,12 @@
+alias: 001.email_plant_level
+hide_entity: true
+trigger:
+  - platform: numeric_state
+    entity_id: sensor.plant_sensor_6_0
+    below: 150
+action:
+  service: notify.email_danny
+  data:
+    title: 'Planten wateren'
+    message: 'Zorg goed voor je planten Danny, we hebben weer water nodig'
+
