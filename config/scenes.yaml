@@ -133,4 +133,3 @@
       state: off
     light.keuken_arduino_7_1:
       state: off
-      transition: 60
