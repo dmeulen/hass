@@ -3,7 +3,7 @@ hide_entity: false
 trigger:
   - platform: numeric_state
     entity_id: sensor.plant_sensor_6_0
-    below: 200
+    below: 150
 action:
   service: tts.google_say
   entity_id: media_player.mfb
