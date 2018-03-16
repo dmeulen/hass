@@ -3,10 +3,10 @@ hide_entity: true
 trigger:
   - platform: numeric_state
     entity_id: sensor.plant_sensor_6_0
-    below: 150
+    below: 200
 action:
-  service: notify.email_danny
+  service: tts.google_say
+  entity_id: media_player.mfb
   data:
-    title: 'Planten wateren'
-    message: 'Zorg goed voor je planten Danny, we hebben weer water nodig'
+    message: 'De planten hebben weer water nodig.'
 
