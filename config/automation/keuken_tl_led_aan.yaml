@@ -3,6 +3,10 @@ trigger:
   - platform: state
     entity_id: binary_sensor.keuken_arduino_7_2
     to: 'on'
+condition:
+  condition: numeric_state
+  entity_id: sensor.light_sensor_1_0
+  below: 45
 action:
   - service: homeassistant.turn_on
     entity_id: switch.keuken_arduino_7_0
