@@ -1,5 +1,5 @@
-alias: 001.email_plant_level
-hide_entity: true
+alias: planten water notificatie
+hide_entity: false
 trigger:
   - platform: numeric_state
     entity_id: sensor.plant_sensor_6_0
