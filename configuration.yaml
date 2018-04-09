@@ -125,6 +125,7 @@ device_tracker:
 
 remote:
   - platform: harmony
+    host: 192.168.1.30
     name: Harmony Hub
     activity: "Watch TV"
     scan_interval: 10
