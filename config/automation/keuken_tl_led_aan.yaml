@@ -1,7 +1,7 @@
 alias: Keuken lamp aan bij beweging
 trigger:
   - platform: state
-    entity_id: binary_sensor.keuken_arduino_7_2
+    entity_id: binary_sensor.keuken_radar
     to: 'on'
 condition:
   condition: numeric_state
@@ -9,4 +9,4 @@ condition:
   below: 45
 action:
   - service: homeassistant.turn_on
-    entity_id: switch.keuken_arduino_7_0
+    entity_id: switch.keuken_led

@@ -1,10 +1,10 @@
 alias: Keuken lamp uit na beweging
 trigger:
   - platform: state
-    entity_id: binary_sensor.keuken_arduino_7_2
+    entity_id: binary_sensor.keuken_radar
     to: 'off'
     for:
-      minutes: 1
+      minutes: 5
 action:
   - service: homeassistant.turn_off
-    entity_id: switch.keuken_arduino_7_0
+    entity_id: switch.keuken_led
