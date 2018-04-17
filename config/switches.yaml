@@ -23,3 +23,10 @@
         data:
           dev_id: guest_at_home
           location_name: "not_home"
+
+- platform: mqtt
+  name: "Keuken LED"
+  command_topic: "keuken/led/light/switch"
+  state_topic: "keuken/led/light/status"
+  payload_on: "ON"
+  payload_off: "OFF"
