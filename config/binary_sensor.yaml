@@ -1,0 +1,3 @@
+- platform: mqtt
+  name: "Keuken Radar"
+  state_topic: "keuken/motion/state"

@@ -160,3 +160,4 @@ scene: !include config/scenes.yaml
 light: !include config/lights.yaml
 notify: !include config/notify.yaml
 switch: !include config/switches.yaml
+binary_sensor: !include config/binary_sensor.yaml
