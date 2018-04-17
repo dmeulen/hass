@@ -21,7 +21,7 @@
         type: white
         fade: on
 - platform: mqtt
-  name: "Keuken LED"
+  name: "Keuken RGB LED"
   state_topic: "keuken/rgb1/light/status"
   command_topic: "keuken/rgb1/light/switch"
   brightness_state_topic: "keuken/rgb1/brightness/status"
