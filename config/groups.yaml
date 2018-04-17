@@ -5,4 +5,4 @@ huiskamer:
     - light.keuken_tafel
     - light.lamp_bank
     - light.oma_lamp
-    - light.keuken_arduino_7_1
+    - light.keuken_rgb_led
