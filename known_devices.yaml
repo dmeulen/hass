@@ -1,0 +1,23 @@
+anna_oneplus3:
+  hide_if_away: false
+  icon:
+  mac:
+  name: anna
+  picture:
+  track: true
+
+danny_oneplus5t:
+  hide_if_away: false
+  icon:
+  mac:
+  name: danny
+  picture:
+  track: true
+
+guest_at_home:
+  hide_if_away: false
+  icon:
+  mac:
+  name: guest at home
+  picture:
+  track: true
