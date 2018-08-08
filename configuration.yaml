@@ -102,6 +102,10 @@ google_assistant:
     - group
     - scene
     - climate
+  entity_config:
+    media_player.mfb:
+      aliases:
+        - hi-fi
 
 tts:
   - platform: google
