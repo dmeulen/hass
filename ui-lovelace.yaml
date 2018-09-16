@@ -4,3 +4,13 @@ resources:
     type: module
   - url: /local/light-card.js
     type: js
+views:
+  - title: Huiskamer
+    cards:
+      - type: entities
+        title: Lichten
+        entities:
+          - entity: light.oma_lamp
+            name: Oma Lamp
+          - entity: light.lamp_bank
+            name: Bank Lamp
