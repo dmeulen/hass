@@ -14,5 +14,6 @@ views:
             name: Oma Lamp
           - entity: light.lamp_bank
             name: Bank Lamp
-      - type: custom:light-card
-        entity: light.oma_lamp
+      - type: custom:button-card
+        entity: group.all_lights
+        icon: mdi:home
