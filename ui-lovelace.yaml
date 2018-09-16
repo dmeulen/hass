@@ -1,0 +1,6 @@
+title: Huis
+resources:
+  - url: /local/button-card.js
+    type: module
+  - url: /local/light-card.js
+    type: js
