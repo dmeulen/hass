@@ -25,10 +25,12 @@ views:
       - type: horizontal-stack
         cards:
           - type: custom:button-card
+            name: HUIS
             entity: switch.huiskamer_light_switch
             icon: mdi:home
             color: auto
           - type: custom:button-card
+            name: GEZELLIG
             icon: mdi:glass-wine
             action: service
             service:
@@ -37,6 +39,7 @@ views:
               data:
                 entity_id: scene.huiskamer_mfb
           - type: custom:button-card
+            name: NORMAAL
             icon: mdi:ceiling-light
             action: service
             service:
@@ -47,10 +50,12 @@ views:
       - type: horizontal-stack
         cards:
           - type: custom:button-card
+            name: KEUKEN RADAR
             icon: mdi:radar
             color: auto
             entity: automation.keuken_lamp_aan_bij_beweging
           - type: custom:button-card
+            name: GAST
             icon: mdi:home-account
             color: auto
             entity: switch.guest_switch
