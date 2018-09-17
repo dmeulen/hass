@@ -22,69 +22,71 @@ views:
         color: auto
   - title: Tablet
     cards:
-      - type: horizontal-stack
+      - type: vertical-stack
         cards:
-          - type: custom:button-card
-            name: HUIS
-            entity: switch.huiskamer_light_switch
-            icon: mdi:home
-            color: auto
-          - type: custom:button-card
-            name: GEZELLIG
-            icon: mdi:glass-wine
-            action: service
-            service:
-              domain: scene
-              action: turn_on
-              data:
-                entity_id: scene.huiskamer_mfb
-          - type: custom:button-card
-            name: NORMAAL
-            icon: mdi:ceiling-light
-            action: service
-            service:
-              domain: scene
-              action: turn_on
-              data:
-                entity_id: scene.huiskamer_normaal
-      - type: horizontal-stack
-        cards:
-          - type: custom:button-card
-            name: KEUKEN RADAR
-            icon: mdi:radar
-            color: auto
-            entity: automation.keuken_lamp_aan_bij_beweging
-          - type: custom:button-card
-            name: GAST
-            icon: mdi:home-account
-            color: auto
-            entity: switch.guest_switch
-      - type: horizontal-stack
-        cards:
-          - type: custom:gauge-card
-            title: Licht sensor
-            entity: sensor.light_sensor_1_0
-            min: 0
-            max: 100
-            scale: '40px'
-            severity:
-              - green: 40
-              - red: 0
-              - amber: 25
-          - type: custom:gauge-card
-            title: Licht Sensor Batt
-            entity: sensor.lightlevel_battery
-            min: 60
-            max: 100
-            scale: '40px'
-            severity:
-              - green: 80
-              - red: 70
-              - amber: 75
-      - type: horizontal-stack
-        cards:
-          - type: iframe
-            url: https://gadgets.buienradar.nl/gadget/zoommap/?lat=52.09083&lng=5.12222&overname=2&zoom=8&naam=Utrecht&size=2&voor=1
-            aspect_ratio: 100%
-          - type: media-control
-            entity: media_player.mfb
+          - type: horizontal-stack
+            cards:
+              - type: custom:button-card
+                name: HUIS
+                entity: switch.huiskamer_light_switch
+                icon: mdi:home
+                color: auto
+              - type: custom:button-card
+                name: GEZELLIG
+                icon: mdi:glass-wine
+                action: service
+                service:
+                  domain: scene
+                  action: turn_on
+                  data:
+                    entity_id: scene.huiskamer_mfb
+              - type: custom:button-card
+                name: NORMAAL
+                icon: mdi:ceiling-light
+                action: service
+                service:
+                  domain: scene
+                  action: turn_on
+                  data:
+                    entity_id: scene.huiskamer_normaal
+          - type: horizontal-stack
+            cards:
+              - type: custom:button-card
+                name: KEUKEN RADAR
+                icon: mdi:radar
+                color: auto
+                entity: automation.keuken_lamp_aan_bij_beweging
+              - type: custom:button-card
+                name: GAST
+                icon: mdi:home-account
+                color: auto
+                entity: switch.guest_switch
+          - type: horizontal-stack
+            cards:
+              - type: custom:gauge-card
+                title: Licht sensor
+                entity: sensor.light_sensor_1_0
+                min: 0
+                max: 100
+                scale: '40px'
+                severity:
+                  - green: 40
+                  - red: 0
+                  - amber: 25
+              - type: custom:gauge-card
+                title: Licht Sensor Batt
+                entity: sensor.lightlevel_battery
+                min: 60
+                max: 100
+                scale: '40px'
+                severity:
+                  - green: 80
+                  - red: 70
+                  - amber: 75
+          - type: horizontal-stack
+            cards:
+              - type: iframe
+                url: https://gadgets.buienradar.nl/gadget/zoommap/?lat=52.09083&lng=5.12222&overname=2&zoom=8&naam=Utrecht&size=2&voor=1
+                aspect_ratio: 100%
+              - type: media-control
+                entity: media_player.mfb
