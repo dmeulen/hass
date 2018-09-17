@@ -81,3 +81,6 @@ views:
               - green: 80
               - red: 70
               - amber: 75
+      - type: iframe
+        url: https://gadgets.buienradar.nl/gadget/zoommap/?lat=52.09083&lng=5.12222&overname=2&zoom=8&naam=Utrecht&size=2&voor=1
+        title: Buienradar
