@@ -61,6 +61,7 @@ views:
             entity: sensor.light_sensor_1_0
             min: 0
             max: 100
+            scale: '40px'
             severity:
               - green: 40
               - red: 0
@@ -70,6 +71,7 @@ views:
             entity: sensor.lightlevel_battery
             min: 60
             max: 100
+            scale: '40px'
             severity:
               - green: 80
               - red: 70
