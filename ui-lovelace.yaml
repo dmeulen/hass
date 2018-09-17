@@ -29,7 +29,6 @@ views:
             entity: switch.huiskamer_light_switch
             icon: mdi:home
             color: auto
-            color_type: card
           - type: custom:button-card
             name: GEZELLIG
             icon: mdi:glass-wine
@@ -54,13 +53,11 @@ views:
             name: KEUKEN RADAR
             icon: mdi:radar
             color: auto
-            color_type: card
             entity: automation.keuken_lamp_aan_bij_beweging
           - type: custom:button-card
             name: GAST
             icon: mdi:home-account
             color: auto
-            color_type: card
             entity: switch.guest_switch
       - type: horizontal-stack
         cards:
