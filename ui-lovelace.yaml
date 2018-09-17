@@ -4,7 +4,7 @@ resources:
     type: module
   - url: /local/light-card.js
     type: js
-  - url: /local/gauge-card.js
+  - url: /local/gauge-card.js?v=2
     type: js
 views:
   - title: Huiskamer
@@ -54,3 +54,23 @@ views:
             icon: mdi:home-account
             color: auto
             entity: switch.guest_switch
+      - type: horizontal-stack
+        cards:
+          - type: custom:gauge-card
+            title: Licht sensor
+            entity: sensor.light_sensor_1_0
+            min: 0
+            max: 100
+            severity:
+              - green: 40
+              - red: 0
+              - amber: 25
+          - type: custom:gauge-card
+            title: Licht Sensor Batt
+            entity: sensor.lightlevel_battery
+            min: 60
+            max: 100
+            severity:
+              - green: 80
+              - red: 70
+              - amber: 75
