@@ -85,4 +85,5 @@ views:
         cards:
           - type: iframe
             url: https://gadgets.buienradar.nl/gadget/zoommap/?lat=52.09083&lng=5.12222&overname=2&zoom=8&naam=Utrecht&size=2&voor=1
-            aspect_ratio: 25%
+          - type: iframe
+            url: https://api.buienradar.nl/image/1.0/RadarMapNL?w=256&h=256
