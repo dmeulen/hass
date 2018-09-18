@@ -40,7 +40,7 @@ views:
                 color: auto
                 default_color: rgb(255, 152, 0)
               - type: custom:button-card
-                name: KEUKEN RADAR
+                name: RADAR
                 icon: mdi:radar
                 color: auto
                 default_color: rgb(255, 152, 0)
