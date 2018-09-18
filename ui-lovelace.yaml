@@ -39,17 +39,20 @@ views:
                 name: KEUKEN RADAR
                 icon: mdi:radar
                 color: auto
+                default_color: rgb(255, 152, 0)
                 entity: automation.keuken_lamp_aan_bij_beweging
               - type: custom:button-card
                 name: GAST
                 icon: mdi:home-account
                 color: auto
+                default_color: rgb(255, 152, 0)
                 entity: switch.guest_switch
           - type: horizontal-stack
             cards:
               - type: custom:button-card
                 name: NORMAAL
                 icon: mdi:ceiling-light
+                default_color: rgb(255, 152, 0)
                 action: service
                 service:
                   domain: scene
@@ -59,6 +62,7 @@ views:
               - type: custom:button-card
                 name: GEZELLIG
                 icon: mdi:glass-wine
+                default_color: rgb(255, 152, 0)
                 action: service
                 service:
                   domain: scene
