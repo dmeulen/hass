@@ -34,8 +34,7 @@ views:
                 entity: switch.huiskamer_light_switch
                 icon: mdi:home
                 color: auto
-                style:
-                  - color: rgb(255, 152, 0)
+                default_color: rgb(255, 152, 0)
               - type: custom:button-card
                 name: KEUKEN RADAR
                 icon: mdi:radar
