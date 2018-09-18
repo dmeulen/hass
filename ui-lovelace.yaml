@@ -78,9 +78,9 @@ views:
                 max: 100
                 scale: '40px'
                 severity:
-                  - green: 40
-                  - red: 0
-                  - amber: 25
+                  green: 40
+                  red: 0
+                  amber: 25
               - type: custom:gauge-card
                 title: Licht Sensor Batt
                 entity: sensor.lightlevel_battery
@@ -88,9 +88,9 @@ views:
                 max: 100
                 scale: '40px'
                 severity:
-                  - green: 80
-                  - red: 70
-                  - amber: 75
+                  green: 80
+                  red: 70
+                  amber: 75
           - type: horizontal-stack
             cards:
               - type: iframe
