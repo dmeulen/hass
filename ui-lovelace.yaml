@@ -2,6 +2,8 @@ title: Huis
 resources:
   - url: /local/button-card.js
     type: module
+  - url: /local/thermostat-card.js?v=1
+    type: module
   - url: /local/light-card.js
     type: js
   - url: /local/gauge-card.js?v=2
@@ -96,5 +98,6 @@ views:
               - type: iframe
                 url: https://gadgets.buienradar.nl/gadget/zoommap/?lat=52.09083&lng=5.12222&overname=2&zoom=8&naam=Utrecht&size=2&voor=1
                 aspect_ratio: 100%
-              - type: media-control
-                entity: media_player.mfb
+              - type: custom:thermostat-card
+                title: Huiskamer
+                entity: climate.toon_van_eneco
