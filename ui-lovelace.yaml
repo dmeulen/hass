@@ -10,6 +10,8 @@ resources:
     type: js
   - url: /local/kiosk.js
     type: js
+  - url: /local/mini-media-player.js
+    type: js
 views:
   - title: Huiskamer
     cards:
@@ -100,3 +102,8 @@ views:
                 aspect_ratio: 100%
               - type: custom:thermostat-card
                 entity: climate.toon_van_eneco
+          - type: horizontal-stack
+            cards:
+              - type: custom:mini-media-player
+                entity: media_player.mfb
+                icon: mdi:speaker
