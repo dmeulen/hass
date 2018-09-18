@@ -6,6 +6,8 @@ resources:
     type: js
   - url: /local/gauge-card.js?v=2
     type: js
+  - url: /local/kiosk.js
+    type: js
 views:
   - title: Huiskamer
     cards:
@@ -21,6 +23,7 @@ views:
         icon: mdi:home
         color: auto
   - title: Tablet
+    id: kiosk_tablet
     cards:
       - type: vertical-stack
         cards:
