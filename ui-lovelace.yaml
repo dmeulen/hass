@@ -99,5 +99,4 @@ views:
                 url: https://gadgets.buienradar.nl/gadget/zoommap/?lat=52.09083&lng=5.12222&overname=2&zoom=8&naam=Utrecht&size=2&voor=1
                 aspect_ratio: 100%
               - type: custom:thermostat-card
-                title: Huiskamer
                 entity: climate.toon_van_eneco
