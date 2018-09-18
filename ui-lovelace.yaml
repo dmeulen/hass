@@ -35,6 +35,18 @@ views:
                 icon: mdi:home
                 color: auto
               - type: custom:button-card
+                name: KEUKEN RADAR
+                icon: mdi:radar
+                color: auto
+                entity: automation.keuken_lamp_aan_bij_beweging
+              - type: custom:button-card
+                name: GAST
+                icon: mdi:home-account
+                color: auto
+                entity: switch.guest_switch
+          - type: horizontal-stack
+            cards:
+              - type: custom:button-card
                 name: GEZELLIG
                 icon: mdi:glass-wine
                 action: service
@@ -52,18 +64,6 @@ views:
                   action: turn_on
                   data:
                     entity_id: scene.huiskamer_normaal
-          - type: horizontal-stack
-            cards:
-              - type: custom:button-card
-                name: KEUKEN RADAR
-                icon: mdi:radar
-                color: auto
-                entity: automation.keuken_lamp_aan_bij_beweging
-              - type: custom:button-card
-                name: GAST
-                icon: mdi:home-account
-                color: auto
-                entity: switch.guest_switch
           - type: horizontal-stack
             cards:
               - type: custom:gauge-card
