@@ -21,7 +21,7 @@
   rgb: true
   brightness: true
   effect: true
-  effect_list: ["night_mode"]
+  effect_list: ["night_mode", "white"]
 - name: "keuken_tafel"
   command_topic: milight/commands/0x8E8D/rgbw/2
   state_topic: milight/states/0x8E8D/rgbw/2
@@ -30,7 +30,7 @@
   rgb: true
   brightness: true
   effect: true
-  effect_list: ["night_mode"]
+  effect_list: ["night_mode", "white"]
 - name: "hoek_lamp"
   command_topic: milight/commands/0x8E8D/rgbw/3
   state_topic: milight/states/0x8E8D/rgbw/3
@@ -39,7 +39,7 @@
   rgb: true
   brightness: true
   effect: true
-  effect_list: ["night_mode"]
+  effect_list: ["night_mode", "white"]
 - name: "oma_lamp"
   command_topic: milight/commands/0x8E8D/cct/1
   state_topic: milight/states/0x8E8D/cct/1
