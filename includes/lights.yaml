@@ -19,6 +19,7 @@
   platform: mqtt_json
   color_temp: true
   rgb: true
+  white_value: true
   brightness: true
 - name: "keuken_tafel"
   command_topic: milight/commands/0x8E8D/rgbw/2
@@ -26,6 +27,7 @@
   platform: mqtt_json
   color_temp: true
   rgb: true
+  white_value: true
   brightness: true
 - name: "hoek_lamp"
   command_topic: milight/commands/0x8E8D/rgbw/3
@@ -33,6 +35,7 @@
   platform: mqtt_json
   color_temp: true
   rgb: true
+  white_value: true
   brightness: true
 - name: "oma_lamp"
   command_topic: milight/commands/0x8E8D/cct/1
@@ -40,4 +43,5 @@
   platform: mqtt_json
   color_temp: true
   rgb: false
+  white_value: true
   brightness: true

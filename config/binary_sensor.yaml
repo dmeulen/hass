@@ -1,8 +1,0 @@
-- platform: mqtt
-  name: "Keuken Radar"
-  state_topic: "keuken/motion/status"
-
-- platform: mqtt
-  name: "Deurbel"
-  state_topic: "deur/bell/pressed"
-  payload_on: "PRESSED"

@@ -1,8 +1,0 @@
-alias: 004 - Licht uit in de avond
-hide_entity: True
-trigger:
-  platform: time
-  after: "01:15:00"
-action:
-  service: light.turn_off
-  entity_id: group.huiskamer

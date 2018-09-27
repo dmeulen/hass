@@ -1,8 +1,0 @@
-alias: Keuken LED uit bij radar uit
-trigger:
-  - platform: state
-    entity_id: automation.keuken_lamp_aan_bij_beweging
-    to: 'off'
-action:
-  - service: homeassistant.turn_off
-    entity_id: switch.keuken_led

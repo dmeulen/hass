@@ -1,9 +1,0 @@
-alias: Huiskamer Brightness
-trigger:
-  platform: state
-  entity_id: input_slider.huiskamer_brightness
-action:
-  - service: light.turn_on
-    data_template:
-      entity_id: light.grouped_light
-      brightness: '{{ trigger.to_state.state | int }}'
