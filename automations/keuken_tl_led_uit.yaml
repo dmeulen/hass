@@ -1,0 +1,10 @@
+alias: Keuken lamp uit na beweging
+trigger:
+  - platform: state
+    entity_id: binary_sensor.keuken_radar
+    to: 'off'
+    for:
+      minutes: 5
+action:
+  - service: homeassistant.turn_off
+    entity_id: switch.keuken_led

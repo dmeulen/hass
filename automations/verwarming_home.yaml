@@ -1,0 +1,12 @@
+alias: verwarming home
+hide_entity: True
+trigger:
+  - platform: state
+    entity_id: group.all_devices
+    from: 'not_home'
+    to: 'home'
+action:
+  - service: climate.set_operation_mode
+    data:
+      entity_id: climate.toon_van_eneco
+      operation_mode: heat

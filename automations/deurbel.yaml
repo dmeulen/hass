@@ -1,0 +1,12 @@
+alias: deurbel
+hide_entity: false
+trigger:
+  - platform: state
+    entity_id: binary_sensor.deurbel
+    to: 'on'
+action:
+  service: tts.google_say
+  entity_id: media_player.mfb
+  data:
+    message: 'De deurbel gaat!'
+

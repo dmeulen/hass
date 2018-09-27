@@ -1,0 +1,57 @@
+light.hoek_lamp:
+  friendly_name: Hoek lamp
+  icon: mdi:lightbulb
+light.keuken_tafel:
+  friendly_name: Keukentafel Lamp
+  icon: mdi:lightbulb
+  google_assistant: true
+  google_assistant_name: kitchen table
+light.lamp_bank:
+  friendly_name: Bank Lamp
+  icon: mdi:lightbulb
+light.oma_lamp:
+  friendly_name: Oma Lamp
+  icon: mdi:lightbulb
+switch.huiskamer_light_switch:
+  friendly_name: Huiskamer alle lampen
+  icon: mdi:home
+  google_assistant: true
+  google_assistant_name: all lights
+scene.huiskamer_normaal:
+  google_assistant: true
+  google_assistant_name: normal scene
+scene.huiskamer_tv:
+  google_assistant: true
+  google_assistant_name: tv scene
+scene.huiskamer_mfb:
+  google_assistant: true
+  google_assistant_name: cosy scene
+remote.huiskamer:
+  google_assistant: true
+  google_assistant_name: television
+sensor.br_humidity:
+  friendly_name: Lucht Vochtigheid
+  hidden: true
+sensor.br_precipitation:
+  friendly_name: Neerslag
+sensor.br_pressure:
+  friendly_name: Luchtdruk
+  hidden: true
+sensor.br_symbol:
+  friendly_name: Bewolking
+  hidden: true
+sensor.br_temperature:
+  friendly_name: Temperatuur
+sensor.br_wind_direction:
+  friendly_name: Wind righting
+  hidden: true
+sensor.br_wind_speed:
+  friendly_name: Wind snelheid
+  hidden: true
+sensor.huiskamer:
+  friendly_name: Media
+sensor.light_sensor_1_0:
+  friendly_name: Licht
+sensor.lightlevel_battery:
+  friendly_name: Batterij Licht Sensor
+

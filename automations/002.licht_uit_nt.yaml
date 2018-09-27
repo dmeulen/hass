@@ -1,0 +1,21 @@
+alias: 002 - Lichten uit nt
+hide_entity: True
+trigger:
+  - platform: numeric_state
+    entity_id: sensor.light_sensor_1_0
+    above: 18
+  - platform: state
+    entity_id: group.all_devices
+    from: 'home'
+    to: 'not_home'
+condition:
+  - condition: and
+    conditions:
+      - condition: time
+        after: '07:00'
+      - condition: state
+        entity_id: group.all_devices
+        state: 'not_home'
+action:
+  service: homeassistant.turn_off
+  entity_id: group.all_lights
