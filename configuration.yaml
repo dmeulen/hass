@@ -5,7 +5,7 @@ homeassistant:
   elevation: 1
   unit_system: metric
   time_zone: Europe/Amsterdam
-  customize: !include config/customize.yaml
+  customize: !include includes/customize.yaml
   auth_providers:
     - type: homeassistant
     - type: legacy_api_password
