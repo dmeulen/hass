@@ -68,16 +68,19 @@
       brightness_pct: 100
       rgb_color: [ 255, 255, 255  ]
       color_temp: 200
+      effect: white
     light.keuken_tafel:
       state: on
       brightness_pct: 100
       rgb_color: [ 255, 255, 255  ]
       color_temp: 200
+      effect: white
     light.lamp_bank:
       state: on
       brightness_pct: 100
       rgb_color: [ 255, 255, 255  ]
       color_temp: 200
+      effect: white
     light.oma_lamp:
       state: on
       brightness_pct: 100
