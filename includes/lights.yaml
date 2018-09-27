@@ -19,29 +19,31 @@
   platform: mqtt_json
   color_temp: true
   rgb: true
-  white_value: true
   brightness: true
+  effect: true
+  effect_list: ["night_mode"]
 - name: "keuken_tafel"
   command_topic: milight/commands/0x8E8D/rgbw/2
   state_topic: milight/states/0x8E8D/rgbw/2
   platform: mqtt_json
   color_temp: true
   rgb: true
-  white_value: true
   brightness: true
+  effect: true
+  effect_list: ["night_mode"]
 - name: "hoek_lamp"
   command_topic: milight/commands/0x8E8D/rgbw/3
   state_topic: milight/states/0x8E8D/rgbw/3
   platform: mqtt_json
   color_temp: true
   rgb: true
-  white_value: true
   brightness: true
+  effect: true
+  effect_list: ["night_mode"]
 - name: "oma_lamp"
   command_topic: milight/commands/0x8E8D/cct/1
   state_topic: milight/states/0x8E8D/cct/1
   platform: mqtt_json
   color_temp: true
   rgb: false
-  white_value: true
   brightness: true
