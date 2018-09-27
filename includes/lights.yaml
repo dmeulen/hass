@@ -16,19 +16,24 @@
 - name: "lamp_bank"
   command_topic: milight/commands/0x8E8D/rgbw/1
   state_topic: milight/states/0x8E8D/rgbw/1
-  <<: &MILIGHT_RGBW_PARAMS
-    platform: mqtt_json
-    color_temp: true
-    rgb: true
-    brightness: true
+  platform: mqtt_json
+  color_temp: true
+  rgb: true
+  brightness: true
 - name: "keuken_tafel"
   command_topic: milight/commands/0x8E8D/rgbw/2
   state_topic: milight/states/0x8E8D/rgbw/2
-  <<: *MILIGHT_RGBW_PARAMS
+  platform: mqtt_json
+  color_temp: true
+  rgb: true
+  brightness: true
 - name: "hoek_lamp"
   command_topic: milight/commands/0x8E8D/rgbw/3
   state_topic: milight/states/0x8E8D/rgbw/3
-  <<: *MILIGHT_RGBW_PARAMS
+  platform: mqtt_json
+  color_temp: true
+  rgb: true
+  brightness: true
 - name: "oma_lamp"
   command_topic: milight/commands/0x8E8D/cct/1
   state_topic: milight/states/0x8E8D/cct/1
