@@ -30,3 +30,10 @@
   state_topic: "keuken/led/light/status"
   payload_on: "ON"
   payload_off: "OFF"
+
+- platform: mqtt
+  name: "Garage Deur"
+  command_topic: "garage/relay/switch"
+  state_topic: "garage/relay/ststus"
+  payload_on: "ON"
+  payload_off: "OFF"
