@@ -35,5 +35,6 @@
   name: "Garage Deur"
   command_topic: "garage/relay/switch"
   state_topic: "garage/relay/status"
+  value_template: '{{value_json.status}}'
   payload_on: "ON"
   payload_off: "ON"
