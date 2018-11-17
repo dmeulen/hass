@@ -33,6 +33,8 @@ influxdb:
   username: !secret influxdb_user
   password: !secret influxdb_password
 
+prometheus:
+
 frontend:
   themes:
     darkorange:
