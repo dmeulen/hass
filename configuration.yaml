@@ -97,6 +97,8 @@ media_player:
 toon:
   username: !secret toon_username
   password: !secret toon_password
+  consumer_key: !secret consumer_key
+  consumer_secret: !secret consumer_secret
 
 climate:
   platform: toon
