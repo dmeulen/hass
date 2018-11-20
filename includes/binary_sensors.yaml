@@ -5,4 +5,9 @@
   platform: mqtt
   state_topic: "deur/bell/pressed"
   payload_on: "PRESSED"
-
+- name: "Garagedeur"
+  platform: template
+  sensors:
+    garagedeur:
+      friendly_name: "Garage Open"
+      value_template: "{{ is_state('switch.garage_deur', 'on') }}"
