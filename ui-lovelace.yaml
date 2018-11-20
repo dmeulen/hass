@@ -73,6 +73,16 @@ views:
                   action: turn_on
                   data:
                     entity_id: scene.huiskamer_mfb
+              - type: custom:button-card
+                name: FEL WIT
+                icon: mdi:lightbulb-on-outline
+                default_color: rgb(255, 152, 0)
+                action: service
+                service:
+                  domain: scene
+                  action: turn_on
+                  data:
+                    entity_id: scene.huiskamer_veel_licht
           - type: horizontal-stack
             cards:
               - type: custom:gauge-card
