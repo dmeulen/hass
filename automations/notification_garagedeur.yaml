@@ -1,0 +1,22 @@
+alias: 'Notificatie bij garagedeur open'
+trigger:
+  - platform: state
+    entity_id: binary_sensor.garagedeur
+    to: 'on'
+    for:
+      minutes: 5
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.garagedeur
+condition:
+  condition: state
+  entity_id: binary_sensor.garagedeur
+  state: 'on'
+action:
+  - service: tts.google_say
+    entity_id: media_player.mfb
+    data:
+      message: 'De garage deur staat open'
+  - service: timer.start
+    entity_id: timer.garagedeur

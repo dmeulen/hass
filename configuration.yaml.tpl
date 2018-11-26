@@ -168,6 +168,10 @@ input_select:
 mqtt:
   broker: mqtt.service.consul
 
+timer:
+  garagedeur:
+    duration: '00:05:00'
+
 automation: !include_dir_list automations/
 group: !include includes/groups.yaml
 sensor: !include includes/sensors.yaml
