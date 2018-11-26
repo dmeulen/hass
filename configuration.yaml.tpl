@@ -123,6 +123,7 @@ tts:
     cache_dir: /tmp/tts
     time_memory: 57600
     language: 'nl'
+    base_url: http://{{ env "NOMAD_IP_http" }}:{{ env "NOMAD_PORT_http" }}
 
 mysensors:
   gateways:
