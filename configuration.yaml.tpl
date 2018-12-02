@@ -24,6 +24,12 @@ recorder:
   purge_keep_days: 14
   db_url: !secret db_url
 
+logger:
+  default: critical
+  logs:
+    homeassistant.components: info
+    homeassistant.components.toon: debug
+
 cloud:
 
 config:
