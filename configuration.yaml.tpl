@@ -25,9 +25,7 @@ recorder:
   db_url: !secret db_url
 
 logger:
-  default: critical
-  logs:
-    homeassistant.components.climate: debug
+  default: debug
 
 cloud:
 
