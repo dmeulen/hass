@@ -27,8 +27,7 @@ recorder:
 logger:
   default: critical
   logs:
-    homeassistant.components: info
-    homeassistant.components.toon: debug
+    homeassistant.components.climate: debug
 
 cloud:
 
