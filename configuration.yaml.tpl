@@ -25,7 +25,7 @@ recorder:
   db_url: !secret db_url
 
 logger:
-  default: debug
+  default: critical
 
 cloud:
 
