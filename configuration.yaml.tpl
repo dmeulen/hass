@@ -25,7 +25,7 @@ recorder:
   db_url: !secret db_url
 
 logger:
-  default: critical
+  default: info
 
 cloud:
 
@@ -174,6 +174,8 @@ mqtt:
 timer:
   garagedeur:
     duration: '00:05:00'
+
+python_script:
 
 automation: !include_dir_list automations/
 group: !include includes/groups.yaml
