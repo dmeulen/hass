@@ -22,3 +22,19 @@
     - time_date
     - time_utc
     - beat
+
+- platform: mqtt
+  name: "Huiskamer temperatuur"
+  state_topic: "huiskamer/temperature/status"
+  unit_of_measurement: '°C'
+
+- platform: mqtt
+  name: "Huiskamer vochitgheid"
+  state_topic: "huiskamer/humidty/status"
+  unit_of_measurement: '%'
+
+- platform: mqtt
+  name: "Huiskamer licht"
+  state_topic: "huiskamer/lightlevel/status"
+  unit_of_measurement: '%'
+
