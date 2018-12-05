@@ -2,8 +2,8 @@ alias: 001 - Lichten aan als het donker is
 hide_entity: True
 trigger:
   - platform: numeric_state
-    entity_id: sensor.light_sensor_1_0
-    below: 62
+    entity_id: sensor.huiskamer_licht
+    below: 46
   - platform: time
     at: '06:45'
   - platform: state

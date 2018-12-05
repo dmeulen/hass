@@ -2,7 +2,7 @@ alias: 002 - Lichten uit nt
 hide_entity: True
 trigger:
   - platform: numeric_state
-    entity_id: sensor.light_sensor_1_0
+    entity_id: sensor.huiskamer_licht
     above: 18
   - platform: state
     entity_id: group.all_devices
