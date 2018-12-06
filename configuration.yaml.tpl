@@ -23,6 +23,16 @@ recorder:
   purge_interval: 1
   purge_keep_days: 14
   db_url: !secret db_url
+  exclude:
+    - automation
+    - weblink
+    - updater
+  entities:
+    - sun.sun
+    - sensor.date
+    - sensor.date_time
+    - sensor.internet_time
+    - binary_sensor.keuken_radar
 
 logger:
   default: info
