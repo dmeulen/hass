@@ -6,7 +6,7 @@ trigger:
     from: 'not_home'
     to: 'home'
 action:
-  - service: climate.set_operation_mode
+  - service: climate.set_temperature
     data:
       entity_id: climate.toon_van_eneco
-      operation_mode: heat
+      temperature: 21
