@@ -36,7 +36,7 @@ recorder:
       - binary_sensor.keuken_radar
 
 logger:
-  default: info
+  default: debug
 
 cloud:
 
