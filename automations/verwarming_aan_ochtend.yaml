@@ -2,7 +2,7 @@ alias: verwarming aan ochtend
 hide_entity: True
 trigger:
   platfrom: time
-  at: '06:45:00'
+  at: '06:45'
 condition:
   condition: state
   entity_id: group.all_devices

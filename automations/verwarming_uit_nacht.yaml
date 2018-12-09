@@ -2,7 +2,7 @@ alias: verwarming uit nacht
 hide_entity: True
 trigger:
   platfrom: time
-  at: "00:05:00"
+  at: '00:05'
 action:
   service: climate.set_temperature
   data:
