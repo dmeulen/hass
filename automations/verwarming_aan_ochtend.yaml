@@ -1,8 +1,12 @@
 alias: verwarming aan ochtend
 hide_entity: True
 trigger:
-  platfrom: time
+  platform: time
   at: '06:45'
+condition:
+  condition: state
+  entity_id: group.all_devices
+  state: 'home'
 action:
   service: climate.set_temperature
   data:
