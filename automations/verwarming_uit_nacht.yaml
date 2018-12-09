@@ -1,0 +1,10 @@
+alias: verwarming uit nacht
+hide_identity: True
+trigger:
+  - platfrom: time
+    at: "00:05:00"
+action:
+  - service: climate.set_temperature
+    data:
+      entity_id: climate.toon_van_eneco
+      temperature: 17
