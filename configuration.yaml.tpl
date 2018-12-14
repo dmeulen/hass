@@ -128,8 +128,11 @@ google_assistant:
     - climate
   entity_config:
     media_player.mfb:
+      name: philips
       aliases:
         - hi-fi
+    switch.garage_deur:
+      expose: false
 
 tts:
   - platform: google
