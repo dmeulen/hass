@@ -117,22 +117,22 @@ toon:
 climate:
   platform: toon
 
-google_assistant:
-  project_id: !secret ga_project_id
-  api_key: !secret ga_api_key
-  exposed_domains:
-    - switch
-    - light
-    - group
-    - scene
-    - climate
-  entity_config:
-    media_player.mfb:
-      name: philips
-      aliases:
-        - hi-fi
-    switch.garage_deur:
-      expose: false
+#google_assistant:
+#  project_id: !secret ga_project_id
+#  api_key: !secret ga_api_key
+#  exposed_domains:
+#    - switch
+#    - light
+#    - group
+#    - scene
+#    - climate
+#  entity_config:
+#    media_player.mfb:
+#      name: philips
+#      aliases:
+#        - hi-fi
+#    switch.garage_deur:
+#      expose: false
 
 tts:
   - platform: google
