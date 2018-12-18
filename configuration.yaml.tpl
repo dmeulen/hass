@@ -15,6 +15,11 @@ http:
   api_password: !secret api_password
   base_url: !secret base_url
   use_x_forwarded_for: true
+  trusted_proxies:
+    - !secret trusted_proxy_0
+    - !secret trusted_proxy_1
+    - !secret trusted_proxy_2
+    - !secret trusted_proxy_3
   trusted_networks:
     - 127.0.0.1
     - 172.17.0.0/24
