@@ -112,6 +112,7 @@ sun:
 cast:
   media_player:
     - host: 192.168.1.23
+    - host: 192.168.1.24
 
 toon:
   username: !secret toon_username
