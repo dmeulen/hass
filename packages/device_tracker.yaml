@@ -1,0 +1,4 @@
+device_tracker:
+  - platform: owntracks_http
+    waypoint_whitelist:
+      - danny
