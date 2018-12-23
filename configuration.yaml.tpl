@@ -10,6 +10,7 @@ homeassistant:
     - type: homeassistant
     - type: legacy_api_password
     - type: trusted_networks
+  packages: !include_dir_named packages
 
 http:
   api_password: !secret api_password
@@ -161,12 +162,12 @@ device_tracker:
     waypoint_whitelist:
       - danny
 
-remote:
-  - platform: harmony
-    host: 192.168.1.30
-    name: Harmony Hub
-    activity: "Watch TV"
-    scan_interval: 10
+#remote:
+#  - platform: harmony
+#    host: 192.168.1.30
+#    name: Harmony Hub
+#    activity: "Watch TV"
+#    scan_interval: 10
 
 zone:
   - name: Home
