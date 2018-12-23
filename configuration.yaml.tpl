@@ -48,10 +48,10 @@ cloud:
 
 config:
 
-influxdb:
-  host: 192.168.1.253
-  username: !secret influxdb_user
-  password: !secret influxdb_password
+#influxdb:
+#  host: 192.168.1.253
+#  username: !secret influxdb_user
+#  password: !secret influxdb_password
 
 prometheus:
 
