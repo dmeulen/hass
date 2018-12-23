@@ -38,3 +38,9 @@
   state_topic: "huiskamer/lightlevel/status"
   unit_of_measurement: '%'
 
+- platform: template
+  sensors:
+    huiskamer_tv:
+      value_template: '{{ states.remote.harmony_hub.attributes.current_activity }}'
+      friendly_name: 'Huiskamer TV'
+
