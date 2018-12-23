@@ -96,25 +96,6 @@ frontend:
       table-row-background-color: "var(--paper-card-background-color)"
       table-row-alternative-background-color: "var(--sidebar-text_-_background)"
 
-map:
-
-updater:
-
-discovery:
-
-conversation:
-
-history:
-
-logbook:
-
-sun:
-
-cast:
-  media_player:
-    - host: 192.168.1.23
-    - host: 192.168.1.24
-
 toon:
   username: !secret toon_username
   password: !secret toon_password
