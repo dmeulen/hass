@@ -5,7 +5,7 @@ trigger:
     to: 'on'
 condition:
   condition: numeric_state
-  entity_id: sensor.light_sensor_1_0
+  entity_id: sensor.huiskamer_licht
   below: 45
 action:
   - service: homeassistant.turn_on
