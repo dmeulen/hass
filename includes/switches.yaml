@@ -8,9 +8,6 @@
       turn_off:
         service: scene.turn_on
         entity_id: scene.huiskamer_licht_langzaam_uit
-
-- platform: template
-  switches:
     guest_switch:
       value_template: "{{ is_state('device_tracker.guest_at_home', 'home') }}"
       turn_on:
