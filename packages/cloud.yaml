@@ -1,1 +1,14 @@
 cloud:
+  google_actions:
+    filter:
+      exclude_entities:
+        - switch.garage_deur
+        - switch.keuken_led
+      exclude_domains:
+        - group
+    entity_config:
+      switch.guest_switch:
+        name: gast mode
+        aliases:
+          - oppas mode
+          - guest mode

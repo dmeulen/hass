@@ -1,8 +1,10 @@
 alias: verwarming uit nacht
 hide_entity: True
 trigger:
-  platform: time
-  at: '23:30'
+  - platform: time
+    at: '23:30'
+  - platform: time
+    at: '02:30'
 condition:
   condition: state
   entity_id: group.all_devices
