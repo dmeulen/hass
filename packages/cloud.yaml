@@ -23,3 +23,19 @@ cloud:
         aliases:
           - verwarming
           - toon
+      scene.huiskamer_normaal:
+        name: sfeer huiskamer normaal
+        aliases:
+          - sfeer normaal
+          - normaal licht
+      scene.huiskamer_mfb:
+        name: sfeer gezellig
+        aliases:
+          - sfeer gezellig
+          - gezellig licht
+      scene.huiskamer_veel_licht:
+        name: veel licht
+        aliases:
+          - sfeer veel licht
+          - sfeer helder
+          - helder licht
