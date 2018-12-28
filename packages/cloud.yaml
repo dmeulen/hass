@@ -15,10 +15,11 @@ cloud:
       switch.tv_kijken:
         name: de televisie
         aliases:
-          - TV
+          - de TV
           - media flop
           - ziggo
       climate.toon_van_eneco:
-        name: de verwarming
+        name: toon van eneco
         aliases:
+          - verwarming
           - toon
