@@ -12,3 +12,9 @@ cloud:
         aliases:
           - oppas mode
           - guest mode
+      switch.tv_kijken:
+        name: televisie
+        aliases:
+          - TV
+          - media flop
+          - ziggo
