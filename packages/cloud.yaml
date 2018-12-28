@@ -6,6 +6,7 @@ cloud:
         - switch.keuken_led
       exclude_domains:
         - group
+        - climate
     entity_config:
       switch.guest_switch:
         name: gast mode
@@ -18,11 +19,6 @@ cloud:
           - de TV
           - media flop
           - ziggo
-      climate.toon_van_eneco:
-        name: toon van eneco
-        aliases:
-          - verwarming
-          - toon
       scene.huiskamer_normaal:
         name: sfeer huiskamer normaal
         aliases:
