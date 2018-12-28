@@ -1,4 +1,4 @@
-- psyprock:
+psyprock:
   alias: 'psychedelische rock'
   sequence:
     - service: media_player.play_media
