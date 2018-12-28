@@ -4,7 +4,8 @@
 - name: "Deurbel"
   platform: mqtt
   state_topic: "deur/bell/pressed"
-  payload_on: "PRESSED"
+  payload_on: "ON"
+  payload_off: "OFF"
 - name: "Garagedeur"
   platform: template
   sensors:
