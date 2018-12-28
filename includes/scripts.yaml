@@ -5,4 +5,4 @@ psyprock:
       data_template:
         entity_id: media_player.mfb
         media_content_id: 'spotify:user:theanimalspotify:playlist:5btgmUNOwU5xD14AlR3GjI'
-        media_content_type: playlist
+        media_content_type: 'playlist'
