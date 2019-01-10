@@ -3,7 +3,7 @@ hide_entity: True
 trigger:
   - platform: numeric_state
     entity_id: sensor.huiskamer_licht
-    below: 40
+    below: 29
   - platform: time
     at: '06:45'
   - platform: state

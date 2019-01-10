@@ -3,7 +3,7 @@ hide_entity: True
 trigger:
   - platform: numeric_state
     entity_id: sensor.huiskamer_licht
-    above: 45
+    above: 32
 condition:
   - condition: and
     conditions:
