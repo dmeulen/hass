@@ -32,6 +32,18 @@
         data:
           entity_id: remote.harmony_hub
           activity: 'PowerOff'
+    chromecast_kijken:
+      value_template: "{{ is_state_attr('remote.harmony_hub', 'current_activity', 'Chromecast Huiskamer') }}"
+      turn_on:
+        service: remote.turn_on
+        data:
+          entity_id: remote.harmony_hub
+          activity: 'Chromecast Huiskamer'
+      turn_off:
+        service: remote.turn_on
+        data:
+          entiry_id: remote.harmony_hub
+          activity: 'PowerOff'
 
 - platform: mqtt
   name: "Keuken LED"

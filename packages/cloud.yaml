@@ -19,16 +19,27 @@ cloud:
           - de TV
           - media flop
           - ziggo
+      switch.chromecast_kijken:
+        name: cast
+        aliases:
+          - chromecast
+          - netflix
+          - youtube
+          - cast
       scene.huiskamer_normaal:
         name: sfeer huiskamer normaal
         aliases:
           - sfeer normaal
           - normaal licht
+          - normale verlichting
+          - licht normaal
       scene.huiskamer_mfb:
         name: sfeer gezellig
         aliases:
           - sfeer gezellig
           - gezellig licht
+          - gezellige sfeer
+          - gezellige verlichting
       scene.huiskamer_veel_licht:
         name: veel licht
         aliases:
