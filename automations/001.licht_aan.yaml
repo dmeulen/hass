@@ -1,5 +1,5 @@
 alias: 001 - Lichten aan als het donker is
-hide_entity: True
+hide_entity: False
 trigger:
   - platform: numeric_state
     entity_id: sensor.huiskamer_licht

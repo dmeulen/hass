@@ -1,5 +1,5 @@
 alias: verwarming uit nacht
-hide_entity: True
+hide_entity: False
 trigger:
   - platform: time
     at: '23:30'

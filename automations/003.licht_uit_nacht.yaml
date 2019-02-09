@@ -1,5 +1,5 @@
 alias: 003 - Licht uit nacht
-hide_entity: True
+hide_entity: False
 trigger:
   platform: time
   at: "01:15:00"

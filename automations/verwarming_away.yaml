@@ -1,5 +1,5 @@
 alias: verwarming away
-hide_entity: True
+hide_entity: False
 trigger:
   - platform: state
     entity_id: group.all_devices

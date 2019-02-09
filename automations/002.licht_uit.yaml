@@ -1,5 +1,5 @@
 alias: 002 - Lichten uit
-hide_entity: True
+hide_entity: False
 trigger:
   - platform: numeric_state
     entity_id: sensor.huiskamer_licht
