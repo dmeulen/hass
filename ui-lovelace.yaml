@@ -26,7 +26,7 @@ views:
         entity: group.all_lights
         icon: mdi:home
         color: auto
-  - title: Tablet
+  - title: wallpanel
     id: kiosk_tablet
     cards:
       - type: vertical-stack
