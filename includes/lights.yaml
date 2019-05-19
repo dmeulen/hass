@@ -1,5 +1,5 @@
-- platform: mqtt
-  name: "Keuken RGB LED"
+- name: "Keuken RGB LED"
+  platform: mqtt
   state_topic: "keuken/rgb1/light/status"
   command_topic: "keuken/rgb1/light/switch"
   brightness_state_topic: "keuken/rgb1/brightness/status"
@@ -13,25 +13,35 @@
   payload_on: "ON"
   payload_off: "OFF"
   optimistic: false
-- platform: limitlessled
-  bridges:
-    - host: 192.168.1.3
-      version: 5
-      port: 8899
-      groups:
-        - number: 1
-          name: lamp_bank
-          type: rgbw
-          fade: on
-        - number: 2
-          name: keuken_tafel
-          type: rgbw
-          fade: on
-        - number: 3
-          name: hoek_lamp
-          type: rgbw
-          fade: on
-        - number: 1
-          name: oma_lamp
-          type: white
-          fade: on
+- name: "lamp_bank"
+  command_topic: milight/commands/0x8E8D/rgbw/1
+  state_topic: milight/states/0x8E8D/rgbw/1
+  platform: mqtt
+  schema: json
+  color_temp: true
+  rgb: true
+  brightness: true
+- name: "keuken_tafel"
+  command_topic: milight/commands/0x8E8D/rgbw/2
+  state_topic: milight/states/0x8E8D/rgbw/2
+  platform: mqtt
+  schema: json
+  color_temp: true
+  rgb: true
+  brightness: true
+- name: "hoek_lamp"
+  command_topic: milight/commands/0x8E8D/rgbw/3
+  state_topic: milight/states/0x8E8D/rgbw/3
+  platform: mqtt
+  schema: json
+  color_temp: true
+  rgb: true
+  brightness: true
+- name: "oma_lamp"
+  command_topic: milight/commands/0x8E8D/cct/1
+  state_topic: milight/states/0x8E8D/cct/1
+  platform: mqtt
+  schema: json
+  color_temp: true
+  rgb: false
+  brightness: true
