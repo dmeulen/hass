@@ -8,7 +8,6 @@ homeassistant:
   customize: !include includes/customize.yaml
   auth_providers:
     - type: homeassistant
-    - type: legacy_api_password
     - type: trusted_networks
       trusted_networks:
         - 127.0.0.1
