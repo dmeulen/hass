@@ -1,5 +1,3 @@
 toon:
-  username: !secret toon_username
-  password: !secret toon_password
   client_id: !secret consumer_key
   client_secret: !secret consumer_secret
