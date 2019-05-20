@@ -10,6 +10,10 @@ homeassistant:
     - type: homeassistant
     - type: legacy_api_password
     - type: trusted_networks
+      trusted_networks:
+        - 127.0.0.1
+        - 172.17.0.0/24
+        - !secret trusted_home_network
   packages: !include_dir_named packages
 
 http:
