@@ -12,5 +12,5 @@ condition:
 action:
   service: climate.set_temperature
   data:
-    entity_id: climate.toon_van_eneco
+    entity_id: climate.toon_thermostat
     temperature: 17
