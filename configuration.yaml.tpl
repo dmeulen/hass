@@ -29,7 +29,7 @@ http:
     - !secret trusted_home_network
 
 tts:
-  - platform: google
+  - platform: google_translate
     cache: true
     cache_dir: /tmp/tts
     time_memory: 57600

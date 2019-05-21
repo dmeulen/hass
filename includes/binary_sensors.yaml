@@ -6,8 +6,7 @@
   state_topic: "deur/bell/pressed"
   payload_on: "ON"
   payload_off: "OFF"
-- name: "Garagedeur"
-  platform: template
+- platform: template
   sensors:
     garagedeur:
       friendly_name: "Garage Open"
