@@ -1,13 +1,6 @@
 pipeline {
   agent any
     stages {
-      stage('Clean Workspace') {
-        steps {
-          dir '.' {
-            deleteDir()
-          }
-        }
-      }
       stage('Prepare environment') {
         steps {
           sh 'jenkins_scripts/prepare.sh'
@@ -19,4 +12,9 @@ pipeline {
         }
       }
     }
+  post {
+    always {
+      deleteDir()
+    }
+  }
 }
