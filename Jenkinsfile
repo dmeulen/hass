@@ -12,7 +12,9 @@ pipeline {
         }
       }
       stage('Deploy') {
-        sh 'jenkins_scripts/deploy.sh'
+				steps {
+          sh 'jenkins_scripts/deploy.sh'
+				}
       }
     }
 }
