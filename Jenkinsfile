@@ -1,10 +1,11 @@
 pipeline {
   agent any
-    deleteDir()
     stages {
-      stage('Clone repo') {
+      stage('Clean Workspace') {
         steps {
-          git url: 'git@github.com:dmeulen/hass.git', credentialsId: '62c172ed-19c0-4cfd-b6da-0f567c4ee1b5'
+          dir {
+            deleteDir()
+          }
         }
       }
       stage('Prepare environment') {
