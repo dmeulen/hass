@@ -1,7 +1,7 @@
 #!/bin/bash
 export NOMAD_IP_http="127.0.0.1"
 export NOMAD_PORT_http="3128"
-python3 -m venv ${WORKSPACE}/hass
+virtualenv -p python3 ${WORKSPACE}/hass
 . ${WORKSPACE}/hass/bin/activate
 pip3 install --upgrade homeassistant
 if [[ ! -e ./consul-template ]]; then
