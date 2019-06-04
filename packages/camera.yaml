@@ -1,5 +1,0 @@
-camera:
-  - platform: generic
-    name: Voordeur
-    still_image_url: https://www.hornbach.nl/data/shop/D04/001/780/499/144/96/DV_8_5857484_01_4c_NL_20160622230012.jpg
-    stream_source: http://192.168.1.101:8081
