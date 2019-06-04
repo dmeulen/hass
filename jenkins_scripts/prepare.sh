@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 export NOMAD_IP_http="127.0.0.1"
 export NOMAD_PORT_http="3128"
 [[ -e ${WORKSPACE}/hass/bin/python3 ]] || virtualenv -p python3 ${WORKSPACE}/hass
