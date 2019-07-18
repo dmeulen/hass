@@ -13,6 +13,7 @@ homeassistant:
         - 127.0.0.1
         - 172.17.0.0/24
         - !secret trusted_home_network
+      allow_bypass_login: true
   packages: !include_dir_named packages
 
 http:
