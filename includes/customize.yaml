@@ -1,19 +1,19 @@
 light.hoek_lamp:
-  friendly_name: Hoek lamp
+  friendly_name: Wit ding lamp
   icon: mdi:lightbulb
 light.keuken_tafel:
-  friendly_name: Keukentafel Lamp
+  friendly_name: Plant lampen
   icon: mdi:lightbulb
   google_assistant: true
   google_assistant_name: kitchen table
 light.lamp_bank:
-  friendly_name: Bank Lamp
+  friendly_name: Bloemetjes lamp
   icon: mdi:lightbulb
 light.oma_lamp:
   friendly_name: Oma Lamp
   icon: mdi:lightbulb
 switch.huiskamer_light_switch:
-  friendly_name: Huiskamer alle lampen
+  friendly_name: Huiskamer verlichting
   icon: mdi:home
   google_assistant: true
   google_assistant_name: all lights
