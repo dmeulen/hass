@@ -91,7 +91,7 @@
     light.keuken_tafel:
       state: on
       brightness_pct: 100
-      rgb_color: [ 255, 214, 0  ]
+      rgb_color: [ 255, 40, 0  ]
     light.lamp_bank:
       state: on
       brightness_pct: 100
