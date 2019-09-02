@@ -49,7 +49,7 @@
     light.keuken_tafel:
       state: on
       brightness_pct: 80
-      rgb_color: [ 229, 119, 9 ]
+      rgb_color: [ 229, 40, 9 ]
     light.lamp_bank:
       state: on
       brightness_pct: 80
