@@ -1,18 +1,3 @@
-- name: "Keuken RGB LED"
-  platform: mqtt
-  state_topic: "keuken/rgb1/light/status"
-  command_topic: "keuken/rgb1/light/switch"
-  brightness_state_topic: "keuken/rgb1/brightness/status"
-  brightness_command_topic: "keuken/rgb1/brightness/set"
-  rgb_state_topic: "keuken/rgb1/rgb/status"
-  rgb_command_topic: "keuken/rgb1/rgb/set"
-  state_value_template: "{{ value_json.state }}"
-  brightness_value_template: "{{ value_json.brightness }}"
-  rgb_value_template: "{{ value_json.rgb | join(',') }}"
-  qos: 0
-  payload_on: "ON"
-  payload_off: "OFF"
-  optimistic: false
 - name: "lamp_bank"
   command_topic: milight/commands/0x8E8D/rgbw/1
   state_topic: milight/states/0x8E8D/rgbw/1

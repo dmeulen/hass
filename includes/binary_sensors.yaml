@@ -1,11 +1,3 @@
-- name: "Keuken Radar"
-  platform: mqtt
-  state_topic: "keuken/motion/status"
-- name: "Deurbel"
-  platform: mqtt
-  state_topic: "deur/bell/pressed"
-  payload_on: "ON"
-  payload_off: "OFF"
 - platform: template
   sensors:
     garagedeur:

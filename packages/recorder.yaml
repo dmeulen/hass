@@ -12,4 +12,3 @@ recorder:
       - sensor.date
       - sensor.date_time
       - sensor.internet_time
-      - binary_sensor.keuken_radar

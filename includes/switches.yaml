@@ -46,13 +46,6 @@
           activity: 'PowerOff'
 
 - platform: mqtt
-  name: "Keuken LED"
-  command_topic: "keuken/led/light/switch"
-  state_topic: "keuken/led/light/status"
-  payload_on: "ON"
-  payload_off: "OFF"
-
-- platform: mqtt
   name: "Garage Deur"
   command_topic: "garage/relay/switch"
   state_topic: "garage/relay/status"

@@ -3,7 +3,6 @@ cloud:
     filter:
       exclude_entities:
         - switch.garage_deur
-        - switch.keuken_led
       exclude_domains:
         - group
         - climate

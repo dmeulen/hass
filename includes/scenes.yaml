@@ -15,10 +15,6 @@
     light.oma_lamp:
       state: on
       brightness_pct: 100
-    light.keuken_rgb_led:
-      state: on
-      brightness_pct: 40
-      rgb_color: [ 255, 64, 0 ]
 - name: huiskamer tv
   entities:
     light.hoek_lamp:
@@ -36,10 +32,6 @@
     light.oma_lamp:
       state: on
       brightness_pct: 30
-    light.keuken_rgb_led:
-      state: on
-      brightness_pct: 40
-      rgb_color: [ 255, 64, 0 ]
 - name: huiskamer mfb
   entities:
     light.hoek_lamp:
@@ -57,10 +49,6 @@
     light.oma_lamp:
       state: on
       brightness_pct: 40
-    light.keuken_rgb_led:
-      state: on
-      brightness_pct: 40
-      rgb_color: [ 229, 119, 0 ]
 - name: huiskamer veel licht
   entities:
     light.hoek_lamp:
@@ -78,10 +66,6 @@
     light.oma_lamp:
       state: on
       brightness_pct: 99
-    light.keuken_rgb_led:
-      state: on
-      brightness_pct: 40
-      rgb_color: [ 255, 64, 0 ]
 - name: huiskamer langzaam normaal
   entities:
     light.hoek_lamp:
@@ -99,10 +83,6 @@
     light.oma_lamp:
       state: on
       brightness_pct: 70
-    light.keuken_rgb_led:
-      state: on
-      brightness_pct: 60
-      rgb_color: [ 255, 64, 0 ]
 - name: huiskamer licht uit
   entities:
     light.hoek_lamp:
@@ -112,8 +92,6 @@
     light.lamp_bank:
       state: off
     light.oma_lamp:
-      state: off
-    light.keuken_rgb_led:
       state: off
 - name: huiskamer licht langzaam uit
   entities:
@@ -127,6 +105,4 @@
       state: off
       transition: 60
     light.oma_lamp:
-      state: off
-    light.keuken_rgb_led:
       state: off
