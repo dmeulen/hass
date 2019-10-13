@@ -1,7 +1,9 @@
 person:
   - name: Danny
+    id: 7072525c1699a445709e16476b08689f
     device_trackers:
       - device_tracker.danny_oneplous5t
   - name: Anna
+    id: 46a63dabb4f26417721571778298a2ba
     device_trackers:
       - device_tracker.anna_oneplus3
