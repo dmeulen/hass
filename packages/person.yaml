@@ -1,0 +1,7 @@
+person:
+  - name: Danny
+    device_trackers:
+      - device_tracker.danny_oneplous5t
+  - name: Anna
+    device_trackers:
+      - device_tracker.anna_oneplus3
