@@ -1,1 +1,8 @@
 prometheus:
+  namespace: hass
+  filter:
+    include_domains:
+      - switch
+      - sensor
+      - climate
+      - person
