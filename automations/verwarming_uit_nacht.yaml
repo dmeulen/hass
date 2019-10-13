@@ -7,7 +7,7 @@ trigger:
     at: '02:30'
 condition:
   condition: state
-  entity_id: group.all_devices
+  entity_id: group.all_persons
   state: 'home'
 action:
   service: climate.set_temperature

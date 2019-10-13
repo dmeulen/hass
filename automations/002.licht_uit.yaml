@@ -10,7 +10,7 @@ condition:
       - condition: time
         after: '07:00'
       - condition: state
-        entity_id: group.all_devices
+        entity_id: group.all_persons
         state: 'home'
 action:
   service: scene.turn_on

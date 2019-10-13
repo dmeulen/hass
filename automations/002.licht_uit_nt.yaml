@@ -5,7 +5,7 @@ trigger:
     entity_id: sensor.huiskamer_licht
     above: 18
   - platform: state
-    entity_id: group.all_devices
+    entity_id: group.all_persons
     from: 'home'
     to: 'not_home'
 condition:
@@ -14,7 +14,7 @@ condition:
       - condition: time
         after: '07:00'
       - condition: state
-        entity_id: group.all_devices
+        entity_id: group.all_persons
         state: 'not_home'
 action:
   service: homeassistant.turn_off

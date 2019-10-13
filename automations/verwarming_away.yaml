@@ -2,7 +2,7 @@ alias: verwarming away
 hide_entity: False
 trigger:
   - platform: state
-    entity_id: group.all_devices
+    entity_id: group.all_persons
     from: 'home'
     to: 'not_home'
 action:
