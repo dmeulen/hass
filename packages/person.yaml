@@ -7,3 +7,7 @@ person:
     id: 46a63dabb4f26417721571778298a2ba
     device_trackers:
       - device_tracker.anna_oneplus3
+  - name: Guest
+    id: 2ec099f2d602cc4968c5267970be1326
+    device_trackers:
+      - device_tracker.guest_at_home
