@@ -14,20 +14,17 @@ homeassistant:
         - 172.17.0.0/24
         - !secret trusted_home_network
       allow_bypass_login: true
+    - type: legacy_api_password
+      api_password: !secret api_password
   packages: !include_dir_named packages
 
 http:
-  api_password: !secret api_password
   base_url: !secret base_url
   use_x_forwarded_for: true
   trusted_proxies:
   {{- range service "nomad-client" }}
     - {{ .Address }}
   {{- end }}
-  trusted_networks:
-    - 127.0.0.1
-    - 172.17.0.0/24
-    - !secret trusted_home_network
 
 tts:
   - platform: google_translate
