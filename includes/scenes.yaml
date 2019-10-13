@@ -14,7 +14,7 @@
       rgb_color: [ 255, 214, 0  ]
     light.oma_lamp:
       state: on
-      brightness_pct: 100
+      brightness_pct: 10
 - name: huiskamer tv
   entities:
     light.hoek_lamp:
@@ -31,7 +31,7 @@
       rgb_color: [ 229, 119, 9 ]
     light.oma_lamp:
       state: on
-      brightness_pct: 30
+      brightness_pct: 1
 - name: huiskamer mfb
   entities:
     light.hoek_lamp:
@@ -48,7 +48,7 @@
       rgb_color: [ 229, 119, 9 ]
     light.oma_lamp:
       state: on
-      brightness_pct: 40
+      brightness_pct: 1
 - name: huiskamer veel licht
   entities:
     light.hoek_lamp:
@@ -65,7 +65,7 @@
       effect: white
     light.oma_lamp:
       state: on
-      brightness_pct: 99
+      brightness_pct: 100
 - name: huiskamer langzaam normaal
   entities:
     light.hoek_lamp:
@@ -82,7 +82,7 @@
       rgb_color: [ 255, 214, 0  ]
     light.oma_lamp:
       state: on
-      brightness_pct: 70
+      brightness_pct: 10
 - name: huiskamer licht uit
   entities:
     light.hoek_lamp:
