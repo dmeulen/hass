@@ -6,6 +6,7 @@ huiskamer:
     - light.lamp_bank
     - light.oma_lamp
 all_persons:
+  name: Wie is thuis?
   entities:
     - person.danny
     - person.anna
