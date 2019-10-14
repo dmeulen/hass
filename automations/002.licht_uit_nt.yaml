@@ -17,5 +17,5 @@ condition:
         entity_id: group.all_persons
         state: 'not_home'
 action:
-  service: homeassistant.turn_off
-  entity_id: group.all_lights
+  service: scene.turn_on
+  entity_id: scene.huiskamer_licht_langzaam_uit
