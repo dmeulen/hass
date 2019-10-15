@@ -1,10 +1,10 @@
 #!/bin/bash -x
 export NOMAD_IP_http="127.0.0.1"
 export NOMAD_PORT_http="3128"
-test -d ${WORKSPACE}/hass && rm -r ${WORKSPACE}/hass
-virtualenv -p python3 ${WORKSPACE}/hass
-. ${WORKSPACE}/hass/bin/activate
-pip3 install --upgrade homeassistant==0.96.5
+#test -d ${WORKSPACE}/hass && rm -r ${WORKSPACE}/hass
+#virtualenv -p python3 ${WORKSPACE}/hass
+#. ${WORKSPACE}/hass/bin/activate
+#pip3 install --upgrade homeassistant==0.96.5
 if [[ ! -e ./consul-template ]]; then
   wget https://releases.hashicorp.com/consul-template/0.19.5/consul-template_0.19.5_linux_amd64.zip
   unzip consul-template_0.19.5_linux_amd64.zip
