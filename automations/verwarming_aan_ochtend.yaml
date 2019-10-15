@@ -1,4 +1,4 @@
-alias: verwarming aan ochtend
+alias: verwarming aan in de ochtend
 hide_entity: False
 trigger:
   platform: time

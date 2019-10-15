@@ -1,4 +1,4 @@
-alias: 003 - Licht uit nacht
+alias: Licht uit nacht
 hide_entity: False
 trigger:
   platform: time

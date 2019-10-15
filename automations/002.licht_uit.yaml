@@ -1,4 +1,4 @@
-alias: 002 - Lichten uit
+alias: Lichten uit
 hide_entity: False
 trigger:
   - platform: numeric_state
