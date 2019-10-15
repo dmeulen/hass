@@ -54,4 +54,25 @@ sensor.light_sensor_1_0:
   friendly_name: Licht
 sensor.lightlevel_battery:
   friendly_name: Batterij Licht Sensor
-
+binary_sensor.updater:
+  hidden: true
+binary_sensor.toon_program:
+  hidden: true
+binary_sensor.toon_holiday_mode:
+  hidden: true
+binary_sensor.boiler_module_connection:
+  hidden: true
+binary_sensor.remote_ui:
+  hidden: true
+sensor.max_solar_production:
+  hidden: true
+sensor.current_solar_production:
+  hidden: true
+sensor.power_meter_feed_out_tariff_1:
+  hidden: true
+sensor.power_meter_feed_out_tariff_2:
+  hidden: true
+sensor.average_solar_production_to_grid:
+  hidden: true
+sensor.solar_production_to_grid:
+  hidden: true
