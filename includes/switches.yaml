@@ -53,3 +53,12 @@
   state_off: "OFF"
   payload_on: "ON"
   payload_off: "ON"
+
+- platform: mqtt
+  name: "Tradfri stekker 1"
+  state_topic: "zigbee2mqtt/0x000b3cfffeff0caf"
+  availability_topic: "zigbee2mqtt/bridge/state"
+  payload_off: "OFF"
+  payload_on: "ON"
+  value_template: "{{ value_json.state }}"
+  command_topic: "zigbee2mqtt/0x000b3cfffeff0caf/set"
