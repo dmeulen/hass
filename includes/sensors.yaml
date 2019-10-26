@@ -51,3 +51,10 @@
   availability_topic: "zigbee2mqtt/bridge/state"
   unit_of_measurement: "-"
   value_template: "{{ value_json.linkquality }}"
+
+- platform: mqtt
+  name: "Tradfri Led clear"
+  state_topic: "zigbee2mqtt/0x14b457fffe479185"
+  availability_topic: "zigbee2mqtt/bridge/state"
+  unit_of_measurement: "-"
+  value_template: "{{ value_json.linkquality }}"
