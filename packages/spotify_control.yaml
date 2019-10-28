@@ -61,10 +61,10 @@ input_select:
   spotify_source:
     name: "Source:"
     options:
-      - "MFB huiskamer"
-      - "MFB keuken"
-      - "Alle Luidsprekers"
-    initial: "MFB keuken"
+      - MFB huiskamer
+      - MFB keuken
+      - Alle Luidsprekers
+    initial: MFB keuken
     icon: mdi:speaker-wireless
 
 input_boolean:
@@ -80,9 +80,9 @@ script:
         data_template:
           entity_id: media_player.spotify
           source: >
-            {% if is_state("input_select.spotify_source", "MFB huiskamer") %} "MFB huiskamer"
-            {% elif is_state("input_select.spotify_source", "MFB keuken") %} "MFB keuken"
-            {% elif is_state("input_select.spotify_source", "Alle Luidsprekers") %} "Alle Luidsprekers"
+            {% if is_state("input_select.spotify_source", "MFB huiskamer") %} MFB huiskamer
+            {% elif is_state("input_select.spotify_source", "MFB keuken") %} MFB keuken
+            {% elif is_state("input_select.spotify_source", "Alle Luidsprekers") %} Alle Luidsprekers
             {% endif %}
       - service: media_player.play_media
         data_template:
