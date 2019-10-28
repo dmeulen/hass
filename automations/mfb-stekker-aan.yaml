@@ -4,7 +4,6 @@ trigger:
   - platform: state
     entity_id: media_player.mfb
     from: 'off'
-    to: 'playing'
 action:
   service: homeassistant.turn_on
   entity_id: switch.tradfri_stekker_1
