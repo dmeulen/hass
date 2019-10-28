@@ -1,0 +1,10 @@
+alias: "MFB stekker uit"
+hide_entity: True
+trigger:
+  - platform: state
+    entity_id: media_player.mfb
+    from: 'playing'
+    to: 'off'
+action:
+  service: homeassistant.turn_off
+  entity_id: switch.tradfri_stekker_1
