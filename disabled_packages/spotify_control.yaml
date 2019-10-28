@@ -1,0 +1,161 @@
+media_player:
+  - platform: spotify
+    client_id: !secret spotify_client_id
+    client_secret: !secret spotify_client_secret
+
+group:
+  home_spotify_player:
+    name: Spotify Player
+    entities:
+      - media_player.spotify
+  home_spotify_controls:
+    name: Spotify Controls
+    control: hidden
+    entities:
+      - input_select.spotify_playlist
+      - input_select.spotify_source
+      - script.spotify_music
+      - input_number.spotify_volume
+      - input_boolean.spotify_shuffle
+
+homeassistant:
+  customize:
+    script.spotify_music:
+      friendly_name: Play
+      icon: mdi:play
+
+sensor:
+  - platform: template
+    sensors:
+      spotify_volume:
+        friendly_name: "Spotify Volume"
+        value_template: "{{ states.media_player.spotify.attributes.volume_level }}"
+  - platform: template
+    sensors:
+      spotify_shuffle:
+        friendly_name: "Spotify Shuffle"
+        value_template: "{{ states.media_player.spotify.attributes.shuffle }}"
+  - platform: template
+    sensors:
+      spotify_source:
+        friendly_name: "Spotify Source"
+        value_template: "{{ states.media_player.spotify.attributes.source }}"
+
+input_number:
+  spotify_volume:
+    name: Volume
+    icon: mdi:volume-high
+    initial: 50
+    min: 0
+    max: 100
+    step: 1
+
+input_select:
+  spotify_playlist:
+    name: "Playlist:"
+    options:
+      - psyprock
+      - altrelax
+      - zndag
+    icon: mdi:spotify
+  spotify_source:
+    name: "Source:"
+    options:
+      - MFB huiskamer
+      - MFB keuken
+      - Alle Luidsprekers
+    initial: MFB keuken
+    icon: mdi:speaker-wireless
+
+input_boolean:
+  spotify_shuffle:
+    name: Shuffle
+    icon: mdi:shuffle-variant
+
+script:
+  spotify_music:
+    alias: "Play selected spotify playlist"
+    sequence:
+      - service: media_player.select_source
+        data_template:
+          entity_id: media_player.spotify
+          source: >
+            {% if is_state("input_select.spotify_source", "MFB huiskamer") %} MFB huiskamer
+            {% elif is_state("input_select.spotify_source", "MFB keuken") %} MFB keuken
+            {% elif is_state("input_select.spotify_source", "Alle Luidsprekers") %} Alle Luidsprekers
+            {% endif %}
+      - service: media_player.play_media
+        data_template:
+          entity_id: media_player.spotify
+          media_content_type: playlist
+          media_content_id: >
+            {% if is_state("input_select.spotify_playlist", "psyprock") %} spotify:playlist:5btgmUNOwU5xD14AlR3GjI
+            {% elif is_state("input_select.spotify_playlist", "altrelax") %} spotify:playlist:3gp2PsR8Qs42lY1bO4mNz7
+            {% elif is_state("input_select.spotify_playlist", "zndag") %} spotify:playlist:48nmnXmw7f49WTXlgF5MUf
+            {% endif %}
+
+automation:
+  - alias: "Spotify Volume (Set)"
+    trigger:
+      platform: state
+      entity_id: input_number.spotify_volume
+    action:
+      service: media_player.volume_set
+      data_template:
+        entity_id: media_player.spotify
+        volume_level: '{{ states.input_number.spotify_volume.state | int / 100 }}'
+  - alias: "spotify Volume (Sync)"
+    trigger:
+      - platform: homeassistant
+        event: start
+      - platform: state
+        entity_id: sensor.spotify_volume
+    action:
+      - delay:
+          seconds: 5
+      - service: input_number.set_value
+        data_template:
+          entity_id: input_number.spotify_volume
+          value: '{{ states.sensor.spotify_volume.state | float | round(2) * 100 }}'
+  - alias: "Spotify Shuffle (Set)"
+    trigger:
+      platform: state
+      entity_id: input_boolean.spotify_shuffle
+    action:
+      service: media_player.shuffle_set
+      data_template:
+        entity_id: media_player.spotify
+        shuffle: >
+          {% if is_state("input_boolean.spotify_shuffle", "off") %}
+          false
+          {% elif is_state("input_boolean.spotify_shuffle", "on") %}
+          true
+          {% endif %}
+  - alias: "Spotify Shuffle (Sync)"
+    trigger:
+      - platform: homeassistant
+        event: start
+      - platform: state
+        entity_id: sensor.spotify_shuffle
+    action:
+      - delay:
+          seconds: 5
+      - service_template: >
+          {% if states.sensor.spotify_shuffle.state == 'False' %}
+            input_boolean.turn_off
+          {% else %}
+            input_boolean.turn_on
+          {% endif %}
+        data:
+          entity_id: input_boolean.spotify_shuffle
+  - alias: "Spotify Source (Sync)"
+    trigger:
+      - platform: homeassistant
+        event: start
+      - platform: state
+        entity_id: sensor.spotify_source
+    action:
+      service: input_select.select_option
+      entity_id: input_select.spotify_source
+      data_template:
+        option: '{{ states.sensor.spotify_source.state }}'

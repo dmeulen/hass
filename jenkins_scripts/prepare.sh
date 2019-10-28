@@ -30,5 +30,7 @@ base_url: example.com
 db_url: mysql://test:test@test/test
 consumer_key: fake_key
 consumer_secret: fake_secret
+spotify_client_id: 2938457239487
+spotify_client_secret: 1234567890123456789
 _EOD
 

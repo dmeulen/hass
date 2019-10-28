@@ -38,3 +38,23 @@
       value_template: '{{ states.remote.harmony_hub.attributes.current_activity }}'
       friendly_name: 'Huiskamer TV'
 
+- platform: mqtt
+  name: "Tradfri stekker 1"
+  state_topic: "zigbee2mqtt/0x000b3cfffeff0caf"
+  availability_topic: "zigbee2mqtt/bridge/state"
+  unit_of_measurement: "-"
+  value_template: "{{ value_json.linkquality }}"
+
+- platform: mqtt
+  name: "Tradfri stekker 2"
+  state_topic: "zigbee2mqtt/0x000b3cfffefec150"
+  availability_topic: "zigbee2mqtt/bridge/state"
+  unit_of_measurement: "-"
+  value_template: "{{ value_json.linkquality }}"
+
+- platform: mqtt
+  name: "Tradfri Led clear"
+  state_topic: "zigbee2mqtt/0x14b457fffe479185"
+  availability_topic: "zigbee2mqtt/bridge/state"
+  unit_of_measurement: "-"
+  value_template: "{{ value_json.linkquality }}"
