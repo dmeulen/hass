@@ -15,3 +15,6 @@ views:
         entity: scene.huiskamer_langzaam_normaal
         name: Huis
         icon: mdi:home
+      - type: thermostat
+        entity: climate.toon_thermostat
+        name: Temperatuur
