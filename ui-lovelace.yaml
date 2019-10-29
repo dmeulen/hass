@@ -11,12 +11,7 @@ views:
   - title: Basis
     path: basis
     cards:
-      - type: entity-filter
-        entries:
-          - device_tracker.danny_oneplus5t
-          - device_tracker.anna_oneplus3
-        state_filter:
-          - "home"
-        card:
-          type: glance
-          title: Thuis
+      - type: entity-button
+        entity: scene.huiskamer_langzaam_normaal
+        name: Huis
+        icon: mdi:home
