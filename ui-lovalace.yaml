@@ -1,0 +1,16 @@
+title: De lieverds
+
+views:
+  - title: Basis
+    path: basis
+    theme: dark-mode
+    cards:
+      - type: entity-filter
+        entries:
+          - device_tracker.danny_oneplus5t
+          - device_tracker.anna_oneplus3
+        state_filter:
+          - "home"
+        card:
+          type: glance
+          title: Thuis
