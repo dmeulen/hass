@@ -2,7 +2,7 @@ alias: "MFB stekker aan"
 hide_entity: True
 trigger:
   - platform: state
-    entity_id: media_player.mfb
+    entity_id: media_player.mfb_keuken
     from: 'off'
 action:
   service: homeassistant.turn_on
