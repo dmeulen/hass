@@ -15,11 +15,9 @@ views:
         title: Verlichting
         entities:
           - entity: scene.huiskamer_langzaam_normaal
-            title: Alles aan
             tap_action: call-service
             service: scene.turn_on
           - entity: scene.huiskamer_langzaam_uit
-            title: Alles uit
             tap_action: call-service
             service: scene.turn_on
 
