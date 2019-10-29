@@ -17,7 +17,7 @@ views:
           - entity: scene.huiskamer_langzaam_normaal
             tap_action: call-service
             service: scene.turn_on
-          - entity: scene.huiskamer_langzaam_uit
+          - entity: scene.huiskamer_licht_langzaam_uit
             tap_action: call-service
             service: scene.turn_on
 
