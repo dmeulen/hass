@@ -13,6 +13,8 @@ views:
     cards:
       - type: entity-button
         entity: scene.huiskamer_langzaam_normaal
+        tap_action: call-service
+        service: scene.turn_on
         name: Huis
         icon: mdi:home
       - type: thermostat
