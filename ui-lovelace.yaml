@@ -3,7 +3,6 @@ title: De lieverds
 views:
   - title: Basis
     path: basis
-    theme: dark-mode
     cards:
       - type: entity-filter
         entries:
