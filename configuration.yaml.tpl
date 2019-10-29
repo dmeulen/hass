@@ -59,7 +59,6 @@ group: !include includes/groups.yaml
 sensor: !include includes/sensors.yaml
 scene: !include includes/scenes.yaml
 light: !include includes/lights.yaml
-notify: !include includes/notifications.yaml
 switch: !include includes/switches.yaml
 binary_sensor: !include includes/binary_sensors.yaml
 script: !include includes/scripts.yaml
