@@ -1,6 +1,13 @@
 title: De lieverds
 
 views:
+  - title: Example
+    cards:
+      - type: markdown
+        title: Lovelace
+        content: >
+          Welkom hoor
+
   - title: Basis
     path: basis
     cards:
