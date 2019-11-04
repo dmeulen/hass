@@ -15,6 +15,9 @@
     light.oma_lamp:
       state: on
       brightness_pct: 10
+    light.boekenkast:
+      state: on
+      brightness_pct: 10
 - name: huiskamer tv
   entities:
     light.hoek_lamp:
@@ -32,6 +35,9 @@
     light.oma_lamp:
       state: on
       brightness_pct: 1
+    light.boekenkast:
+      state: on
+      brightness_pct: 10
 - name: huiskamer mfb
   entities:
     light.hoek_lamp:
@@ -49,6 +55,9 @@
     light.oma_lamp:
       state: on
       brightness_pct: 1
+    light.boekenkast:
+      state: on
+      brightness_pct: 10
 - name: huiskamer veel licht
   entities:
     light.hoek_lamp:
@@ -64,6 +73,9 @@
       brightness_pct: 100
       effect: white
     light.oma_lamp:
+      state: on
+      brightness_pct: 100
+    light.boekenkast:
       state: on
       brightness_pct: 100
 - name: huiskamer langzaam normaal
@@ -87,6 +99,10 @@
       state: on
       transition: 60
       brightness_pct: 10
+    light.boekenkast:
+      state: on
+      transition: 60
+      brightness_pct: 10
 - name: huiskamer licht uit
   entities:
     light.hoek_lamp:
@@ -96,6 +112,8 @@
     light.lamp_bank:
       state: off
     light.oma_lamp:
+      state: off
+    light.boekenkast:
       state: off
 - name: huiskamer licht langzaam uit
   entities:
@@ -110,3 +128,6 @@
       transition: 60
     light.oma_lamp:
       state: off
+    light.boekenkast:
+      state: off
+      transition: 60
