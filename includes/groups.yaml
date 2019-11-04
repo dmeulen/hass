@@ -5,8 +5,10 @@ huiskamer:
     - light.keuken_tafel
     - light.lamp_bank
     - light.oma_lamp
+    - light.boekenkast
 all_persons:
   name: Wie is thuis?
   entities:
     - person.danny
     - person.anna
+    - person.guest
