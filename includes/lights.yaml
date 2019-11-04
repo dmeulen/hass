@@ -30,7 +30,7 @@
   color_temp: true
   rgb: false
   brightness: true
-- name: "Tradfri Led clear"
+- name: "boekenkast"
   platform: "mqtt"
   state_topic: "zigbee2mqtt/0x14b457fffe479185"
   availability_topic: "zigbee2mqtt/bridge/state"
