@@ -78,6 +78,8 @@
     light.boekenkast:
       state: on
       brightness_pct: 100
+    switch.tradfri_lees_lamp:
+      state: on
 - name: huiskamer langzaam normaal
   entities:
     light.hoek_lamp:
