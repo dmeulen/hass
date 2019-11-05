@@ -64,7 +64,7 @@
   command_topic: "zigbee2mqtt/0x000b3cfffeff0caf/set"
 
 - platform: mqtt
-  name: "Tradfri stekker 2"
+  name: "Tradfri lees lamp"
   state_topic: "zigbee2mqtt/0x000b3cfffefec150"
   availability_topic: "zigbee2mqtt/bridge/state"
   payload_off: "OFF"

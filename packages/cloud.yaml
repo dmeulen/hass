@@ -25,6 +25,12 @@ cloud:
           - netflix
           - youtube
           - cast
+      switch.tradfri_lees_lamp:
+        name: lees lamp
+        aliases:
+          - lezen
+          - lees lamp
+          - bank lamp
       scene.huiskamer_normaal:
         name: sfeer huiskamer normaal
         aliases:

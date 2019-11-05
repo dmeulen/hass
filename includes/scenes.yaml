@@ -115,6 +115,8 @@
       state: off
     light.boekenkast:
       state: off
+    switch.tradfri_lees_lamp:
+      state: off
 - name: huiskamer licht langzaam uit
   entities:
     light.hoek_lamp:
@@ -131,3 +133,5 @@
     light.boekenkast:
       state: off
       transition: 60
+    switch.tradfri_lees_lamp:
+      state: off
