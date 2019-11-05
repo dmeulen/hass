@@ -61,4 +61,3 @@ scene: !include includes/scenes.yaml
 light: !include includes/lights.yaml
 switch: !include includes/switches.yaml
 binary_sensor: !include includes/binary_sensors.yaml
-script: !include includes/scripts.yaml
