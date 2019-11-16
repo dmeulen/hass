@@ -1,3 +1,7 @@
+inout_boolean:
+  lights_toggle:
+    name: Alle lampen
+
 script:
   lights_off:
     sequence:
