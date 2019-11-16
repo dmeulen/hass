@@ -5,10 +5,10 @@ input_boolean:
 script:
   lights_off:
     sequence:
-      - service: scene.turn_off
+      - service: scene.turn_on
         entity_id: scene.huiskamer_licht_langzaam_uit
       - delay: '00:02'
-      - service: scene.turn_off
+      - service: scene.turn_on
         entity_id: scene.huiskamer_licht_uit
 
 switch:
