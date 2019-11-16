@@ -1,4 +1,4 @@
-inout_boolean:
+input_boolean:
   lights_toggle:
     name: Alle lampen
 
