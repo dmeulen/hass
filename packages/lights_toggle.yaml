@@ -13,13 +13,10 @@ switch:
         {{ is_state('input_boolean.lights_toggle', 'on') }}
       turn_on:
        - service: input_boolean.turn_on
-          data:
-            entity_id: input_boolean.lights_toggle
+         entity_id: input_boolean.lights_toggle
        - service: scene.turn_on
-          data:
-            entity_id: scene.huiskamer_langzaam_normaal
+         entity_id: scene.huiskamer_langzaam_normaal
       turn_off:
         - service: input_boolean.turn_off
-          data:
-            entity_id: input_boolean.lights_toggle
+          entity_id: input_boolean.lights_toggle
         - service: script.lights_off
