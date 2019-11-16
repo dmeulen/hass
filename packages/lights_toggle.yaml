@@ -1,9 +1,11 @@
 script:
   lights_off:
     sequence:
-      - scene: scene.huiskamer_licht_langzaam_uit
+      - service: scene.turn_off
+        entity_id: scene.huiskamer_licht_langzaam_uit
       - delay: '00:02'
-      - scene: scene.huiskamer_licht_uit
+      - service: scene.turn_off
+        entity_id: scene.huiskamer_licht_uit
 
 switch:
   platform: template
