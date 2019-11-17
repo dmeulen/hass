@@ -16,7 +16,7 @@ switch:
   switches:
     all_lights:
       value_template: >
-        {{ states(group.huiskamer) }}
+        {{ is_state('group.all_lights', 'on') }}
       turn_on:
        - service: input_boolean.turn_on
          entity_id: input_boolean.lights_toggle
