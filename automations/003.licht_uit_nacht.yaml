@@ -4,6 +4,4 @@ trigger:
   platform: time
   at: "01:15:00"
 action:
-  service: scene.turn_on
-  entity_id: scene.huiskamer_licht_langzaam_uit
-
+  service: script.lights_off
