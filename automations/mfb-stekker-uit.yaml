@@ -1,5 +1,5 @@
 alias: "MFB stekker uit"
-hide_entity: True
+hide_entity: False
 trigger:
   - platform: state
     entity_id: media_player.mfb_keuken
