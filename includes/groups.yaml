@@ -8,6 +8,7 @@ huiskamer:
     - light.boekenkast
     - switch.tradfri_lees_lamp
     - light.aanrecht_1
+    - light.bollamp
 all_persons:
   name: Wie is thuis?
   entities:

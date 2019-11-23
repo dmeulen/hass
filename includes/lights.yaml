@@ -44,3 +44,10 @@
   brightness: true
   schema: "json"
   command_topic: "zigbee2mqtt/0x14b457fffe44eb6c/set"
+- name: "bollamp"
+  platform: "mqtt"
+  state_topic: "zigbee2mqtt/0x14b457fffe44ee59"
+  availability_topic: "zigbee2mqtt/bridge/state"
+  brightness: true
+  schema: "json"
+  command_topic: "zigbee2mqtt/0x14b457fffe44ee59/set"

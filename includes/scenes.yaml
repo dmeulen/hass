@@ -21,6 +21,9 @@
     light.aanrecht_1:
       state: on
       brightness_pct: 10
+    light.bollamp:
+      state: on
+      brightness_pct: 10
 - name: huiskamer tv
   entities:
     light.hoek_lamp:
@@ -42,6 +45,9 @@
       state: on
       brightness_pct: 10
     light.aanrecht_1:
+      state: on
+      brightness_pct: 10
+    light.bollamp:
       state: on
       brightness_pct: 10
 - name: huiskamer mfb
@@ -67,6 +73,9 @@
     light.aanrecht_1:
       state: on
       brightness_pct: 10
+    light.bollamp:
+      state: on
+      brightness_pct: 10
 - name: huiskamer veel licht
   entities:
     light.hoek_lamp:
@@ -89,7 +98,10 @@
       brightness_pct: 100
     light.aanrecht_1:
       state: on
-      brightness_pct: 10
+      brightness_pct: 100
+    light.bollamp:
+      state: on
+      brightness_pct: 100
     switch.tradfri_lees_lamp:
       state: on
 - name: huiskamer langzaam normaal
@@ -121,6 +133,10 @@
       state: on
       transition: 60
       brightness_pct: 10
+    light.bollamp:
+      state: on
+      transition: 60
+      brightness_pct: 10
 - name: huiskamer licht uit
   entities:
     light.hoek_lamp:
@@ -136,6 +152,8 @@
     switch.tradfri_lees_lamp:
       state: off
     light.aanrecht_1:
+      state: off
+    light.bollamp:
       state: off
 - name: huiskamer licht langzaam uit
   entities:
@@ -154,6 +172,9 @@
       state: off
       transition: 60
     light.aanrecht_1:
+      state: off
+      transition: 60
+    light.bollamp:
       state: off
       transition: 60
     switch.tradfri_lees_lamp:
