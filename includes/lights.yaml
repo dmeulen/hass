@@ -37,3 +37,10 @@
   brightness: true
   schema: "json"
   command_topic: "zigbee2mqtt/0x14b457fffe479185/set"
+- name: "aanrecht 1"
+  platform: "mqtt"
+  state_topic: "zigbee2mqtt/0x14b457fffe44eb6c"
+  availability_topic: "zigbee2mqtt/bridge/state"
+  brightness: true
+  schema: "json"
+  command_topic: "zigbee2mqtt/0x14b457fffe44eb6c/set"

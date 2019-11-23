@@ -18,6 +18,9 @@
     light.boekenkast:
       state: on
       brightness_pct: 10
+    light.aanrecht_1:
+      state: on
+      brightness_pct: 10
 - name: huiskamer tv
   entities:
     light.hoek_lamp:
@@ -36,6 +39,9 @@
       state: on
       brightness_pct: 1
     light.boekenkast:
+      state: on
+      brightness_pct: 10
+    light.aanrecht_1:
       state: on
       brightness_pct: 10
 - name: huiskamer mfb
@@ -58,6 +64,9 @@
     light.boekenkast:
       state: on
       brightness_pct: 10
+    light.aanrecht_1:
+      state: on
+      brightness_pct: 10
 - name: huiskamer veel licht
   entities:
     light.hoek_lamp:
@@ -78,6 +87,9 @@
     light.boekenkast:
       state: on
       brightness_pct: 100
+    light.aanrecht_1:
+      state: on
+      brightness_pct: 10
     switch.tradfri_lees_lamp:
       state: on
 - name: huiskamer langzaam normaal
@@ -105,6 +117,10 @@
       state: on
       transition: 60
       brightness_pct: 10
+    light.aanrecht_1:
+      state: on
+      transition: 60
+      brightness_pct: 10
 - name: huiskamer licht uit
   entities:
     light.hoek_lamp:
@@ -118,6 +134,8 @@
     light.boekenkast:
       state: off
     switch.tradfri_lees_lamp:
+      state: off
+    light.aanrecht_1:
       state: off
 - name: huiskamer licht langzaam uit
   entities:
@@ -133,6 +151,9 @@
     light.oma_lamp:
       state: off
     light.boekenkast:
+      state: off
+      transition: 60
+    light.aanrecht_1:
       state: off
       transition: 60
     switch.tradfri_lees_lamp:
