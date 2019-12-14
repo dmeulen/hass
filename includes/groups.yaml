@@ -1,5 +1,5 @@
-huiskamer:
-  name: Huiskamer
+huis:
+  name: Huis
   entities:
     - light.hoek_lamp
     - light.keuken_tafel
@@ -7,6 +7,20 @@ huiskamer:
     - light.oma_lamp
     - light.boekenkast
     - switch.tradfri_lees_lamp
+    - light.aanrecht_1
+    - light.bollamp
+huiskamer:
+  name: Huiskamer
+  entities:
+    - light.hoek_lamp
+    - light.lamp_bank
+    - light.boekenkast
+    - switch.tradfri_lees_lamp
+    - light.oma_lamp
+keuken:
+  name: Keuken
+  entities:
+    - light.keuken_tafel
     - light.aanrecht_1
     - light.bollamp
 all_persons:
