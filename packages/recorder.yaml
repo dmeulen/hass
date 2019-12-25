@@ -9,6 +9,8 @@ recorder:
       - updater
     entities:
       - sun.sun
+      - sensor.time
+      - sensor.time_date
       - sensor.date
       - sensor.date_time
       - sensor.internet_time
