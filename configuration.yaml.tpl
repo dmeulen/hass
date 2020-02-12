@@ -54,6 +54,8 @@ timer:
 
 python_script:
 
+mobile_app:
+
 automation: !include_dir_list automations/
 group: !include includes/groups.yaml
 sensor: !include includes/sensors.yaml
